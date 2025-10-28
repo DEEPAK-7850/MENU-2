@@ -68,7 +68,7 @@ export const CategoryNavigation: React.FC<CategoryNavigationProps> = ({ activeCa
             <button
               key={category}
               onClick={() => setCategory(category)}
-              className={`flex-shrink-0 flex flex-col items-center justify-center w-24 h-20 rounded-xl p-2 transition-all duration-200 text-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary ${
+              className={`flex-shrink-0 flex flex-col items-center justify-center w-24 h-20 rounded-xl p-2 transition-all duration-200 text-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary mt-1 ${
                 isActive ? 'bg-primary text-white shadow-lg' : 'bg-ui-bg text-text-secondary hover:bg-gray-200'
               }`}
             >

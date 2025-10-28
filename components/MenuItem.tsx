@@ -45,7 +45,7 @@ export const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
   return (
     <div 
       ref={itemRef}
-      className={`flex items-center justify-between py-4 border-b border-ui-border last:border-b-0 transition-all duration-500 ease-out transform ${
+      className={`flex items-center justify-between py-4 border-b-2 border-ui-border last:border-b-0 transition-all duration-500 ease-out transform ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
       }`}
     >

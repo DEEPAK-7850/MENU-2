@@ -1,949 +1,292 @@
 import { ItemType, MenuItem, MenuCategory } from './types';
 
 export const CATEGORY_ORDER: MenuCategory[] = [
-  MenuCategory.BEVERAGES,
   MenuCategory.BREAKFAST,
-  MenuCategory.EGGS,
-  MenuCategory.SALAD_PAPAD,
   MenuCategory.SOUP_VEG,
   MenuCategory.SOUP_NONVEG,
+  MenuCategory.SALAD_PAPAD,
   MenuCategory.INDIAN_STARTERS_VEG,
   MenuCategory.INDIAN_STARTERS_NONVEG,
   MenuCategory.STARTERS_VEG,
   MenuCategory.STARTERS_NONVEG,
+  MenuCategory.EGGS,
   MenuCategory.INDIAN_MAIN_COURSE_VEG,
   MenuCategory.INDIAN_MAIN_COURSE_NONVEG,
   MenuCategory.CHEF_SPECIAL_MAIN_COURSE_VEG,
   MenuCategory.CHEF_SPECIAL_MAIN_COURSE_NONVEG,
   MenuCategory.RAJASTHANI_MAIN_COURSE,
-  MenuCategory.RAITA,
   MenuCategory.INDIAN_BREADS,
   MenuCategory.RICE_VEG,
   MenuCategory.RICE_NONVEG,
+  MenuCategory.RAITA,
   MenuCategory.DESSERTS,
+  MenuCategory.BEVERAGES,
 ];
 
 export const MENU_DATA: MenuItem[] = [
-  // Beverages (from previous update)
-  {
-    id: 16,
-    name: 'Tea',
-    description: 'A refreshing cup of tea.',
-    price: 49,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/tea/400/300',
-    category: MenuCategory.BEVERAGES,
-  },
-  {
-    id: 17,
-    name: 'Coffee',
-    description: 'A rich and aromatic cup of coffee.',
-    price: 79,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/coffee/400/300',
-    category: MenuCategory.BEVERAGES,
-  },
-  {
-    id: 18,
-    name: 'Milk (hot & cold)',
-    description: 'A glass of milk, served hot or cold.',
-    price: 99,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/milk/400/300',
-    category: MenuCategory.BEVERAGES,
-  },
-  {
-    id: 19,
-    name: 'Cold Coffee Plain',
-    description: 'A classic cold coffee, simple and refreshing.',
-    price: 149,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/coldcoffee/400/300',
-    category: MenuCategory.BEVERAGES,
-  },
-  {
-    id: 20,
-    name: 'Cold Coffee (With Ice Cream)',
-    description: 'A rich cold coffee blended with a scoop of ice cream.',
-    price: 199,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/coldcoffeeicecream/400/300',
-    category: MenuCategory.BEVERAGES,
-  },
-  {
-    id: 21,
-    name: 'Milkshake',
-    description: 'A thick and creamy milkshake, available in various flavors.',
-    price: 149,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/milkshake/400/300',
-    category: MenuCategory.BEVERAGES,
-  },
-  {
-    id: 22,
-    name: 'Soft Drinks (400ml)',
-    description: 'A 400ml serving of your favorite carbonated beverage.',
-    price: 49,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/softdrink400/400/300',
-    category: MenuCategory.BEVERAGES,
-  },
-  {
-    id: 23,
-    name: 'Soft Drinks (250ml)',
-    description: 'A 250ml serving of your favorite carbonated beverage.',
-    price: 39,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/softdrink250/400/300',
-    category: MenuCategory.BEVERAGES,
-  },
-  {
-    id: 24,
-    name: 'Fresh Lime Soda',
-    description: 'A tangy and fizzy drink made with fresh lime juice and soda.',
-    price: 79,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/limesoda/400/300',
-    category: MenuCategory.BEVERAGES,
-  },
-  {
-    id: 25,
-    name: 'Fresh Lime Water',
-    description: 'A simple and refreshing drink made with fresh lime juice and water.',
-    price: 49,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/limewater/400/300',
-    category: MenuCategory.BEVERAGES,
-  },
-  {
-    id: 26,
-    name: 'Soda (750ml)',
-    description: 'A 750ml bottle of sparkling soda water.',
-    price: 49,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/soda750/400/300',
-    category: MenuCategory.BEVERAGES,
-  },
-  {
-    id: 27,
-    name: 'Mojito Mint',
-    description: 'A refreshing muddle of mint, lime, and soda.',
-    price: 129,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/mojito/400/300',
-    category: MenuCategory.BEVERAGES,
-  },
-  {
-    id: 28,
-    name: 'Canned Juice (Large)',
-    description: 'A large can of fruit juice.',
-    price: 199,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/juice/400/300',
-    category: MenuCategory.BEVERAGES,
-  },
-  {
-    id: 29,
-    name: 'Blue Lagoon',
-    description: 'A vibrant blue mocktail with a citrusy flavor.',
-    price: 119,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/bluelagoon/400/300',
-    category: MenuCategory.BEVERAGES,
-  },
-  {
-    id: 30,
-    name: 'Mineral Water',
-    description: 'A bottle of purified mineral water.',
-    price: 29,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/water/400/300',
-    category: MenuCategory.BEVERAGES,
-  },
+  // Beverages
+  { id: 16, name: 'Tea', description: 'A refreshing cup of tea.', price: 49, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/tea/400/300', category: MenuCategory.BEVERAGES, },
+  { id: 17, name: 'Coffee', description: 'A rich and aromatic cup of coffee.', price: 79, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/coffee/400/300', category: MenuCategory.BEVERAGES, },
+  { id: 18, name: 'Milk (hot & cold)', description: 'A glass of milk, served hot or cold.', price: 99, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/milk/400/300', category: MenuCategory.BEVERAGES, },
+  { id: 19, name: 'Cold Coffee Plain', description: 'A classic cold coffee, simple and refreshing.', price: 149, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/coldcoffee/400/300', category: MenuCategory.BEVERAGES, },
+  { id: 20, name: 'Cold Coffee (With Ice Cream)', description: 'A rich cold coffee blended with a scoop of ice cream.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/coldcoffeeicecream/400/300', category: MenuCategory.BEVERAGES, },
+  { id: 21, name: 'Milkshake', description: 'A thick and creamy milkshake, available in various flavors.', price: 149, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/milkshake/400/300', category: MenuCategory.BEVERAGES, },
+  { id: 22, name: 'Soft Drinks (400ml)', description: 'A 400ml serving of your favorite carbonated beverage.', price: 49, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/softdrink400/400/300', category: MenuCategory.BEVERAGES, },
+  { id: 23, name: 'Soft Drinks (250ml)', description: 'A 250ml serving of your favorite carbonated beverage.', price: 39, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/softdrink250/400/300', category: MenuCategory.BEVERAGES, },
+  { id: 24, name: 'Fresh Lime Soda', description: 'A tangy and fizzy drink made with fresh lime juice and soda.', price: 79, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/limesoda/400/300', category: MenuCategory.BEVERAGES, },
+  { id: 25, name: 'Fresh Lime Water', description: 'A simple and refreshing drink made with fresh lime juice and water.', price: 49, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/limewater/400/300', category: MenuCategory.BEVERAGES, },
+  { id: 26, name: 'Soda (750ml)', description: 'A 750ml bottle of sparkling soda water.', price: 49, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/soda750/400/300', category: MenuCategory.BEVERAGES, },
+  { id: 27, name: 'Mojito Mint', description: 'A refreshing muddle of mint, lime, and soda.', price: 129, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/mojito/400/300', category: MenuCategory.BEVERAGES, },
+  { id: 28, name: 'Canned Juice (Large)', description: 'A large can of fruit juice.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/juice/400/300', category: MenuCategory.BEVERAGES, },
+  { id: 29, name: 'Blue Lagoon', description: 'A vibrant blue mocktail with a citrusy flavor.', price: 119, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/bluelagoon/400/300', category: MenuCategory.BEVERAGES, },
+  { id: 30, name: 'Mineral Water', description: 'A bottle of purified mineral water.', price: 29, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/water/400/300', category: MenuCategory.BEVERAGES, },
 
-  // Breakfast (from previous update)
-  {
-    id: 31,
-    name: 'Corn Flakes Milk (Hot & Cold)',
-    description: 'A classic breakfast of corn flakes served with your choice of hot or cold milk.',
-    price: 175,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/cornflakes/400/300',
-    category: MenuCategory.BREAKFAST,
-  },
-  {
-    id: 32,
-    name: 'Puri Bhaji (4pc.)',
-    description: 'Fluffy deep-fried bread served with a savory potato curry.',
-    price: 299,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/puribhaji/400/300',
-    category: MenuCategory.BREAKFAST,
-  },
-  {
-    id: 33,
-    name: 'Aloo Paratha with Curd (2pc.)',
-    description: 'Whole wheat flatbread stuffed with a spiced potato filling, served with curd.',
-    price: 275,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/alooparatha/400/300',
-    category: MenuCategory.BREAKFAST,
-  },
-  {
-    id: 34,
-    name: 'Chole Bhature (2pc.)',
-    description: 'A popular North Indian dish of spicy chickpea curry served with fried bread.',
-    price: 249,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/cholebhature/400/300',
-    category: MenuCategory.BREAKFAST,
-  },
-  {
-    id: 35,
-    name: 'Toast with Butter & Jam',
-    description: 'Crispy toasted bread served with butter and a selection of jams.',
-    price: 119,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/toastjam/400/300',
-    category: MenuCategory.BREAKFAST,
-  },
-  {
-    id: 36,
-    name: 'Bread Butter',
-    description: 'Simple and classic slices of bread generously spread with butter.',
-    price: 99,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/breadbutter/400/300',
-    category: MenuCategory.BREAKFAST,
-  },
-  {
-    id: 37,
-    name: 'Aloo Bada (3pc.)',
-    description: 'Spiced potato fritters, deep-fried to perfection.',
-    price: 99,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/aloobada/400/300',
-    category: MenuCategory.BREAKFAST,
-  },
-  {
-    id: 38,
-    name: 'Poha / Upma',
-    description: 'A choice of flattened rice flakes or semolina porridge, tempered with spices.',
-    price: 149,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/poha/400/300',
-    category: MenuCategory.BREAKFAST,
-  },
-  {
-    id: 39,
-    name: 'Idli Sambhar (4pc.)',
-    description: 'Steamed rice cakes served with a flavorful lentil-based vegetable stew.',
-    price: 199,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/idli/400/300',
-    category: MenuCategory.BREAKFAST,
-  },
-  {
-    id: 40,
-    name: 'Veg Sandwich Plain',
-    description: 'A simple sandwich with fresh vegetable fillings.',
-    price: 199,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/vegsandwich/400/300',
-    category: MenuCategory.BREAKFAST,
-  },
-  {
-    id: 41,
-    name: 'Cheese Sandwich',
-    description: 'A classic sandwich filled with delicious melted cheese.',
-    price: 249,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/cheesesandwich/400/300',
-    category: MenuCategory.BREAKFAST,
-  },
-  {
-    id: 42,
-    name: 'Club Sandwich',
-    description: 'A hearty multi-layered sandwich with assorted fillings.',
-    price: 299,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/clubsandwich/400/300',
-    category: MenuCategory.BREAKFAST,
-  },
-  {
-    id: 43,
-    name: 'Veg Grilled Sandwich',
-    description: 'A grilled sandwich packed with fresh vegetables.',
-    price: 249,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/veggrilled/400/300',
-    category: MenuCategory.BREAKFAST,
-  },
-  {
-    id: 44,
-    name: 'Cheese Grilled Sandwich',
-    description: 'A warm, gooey grilled cheese sandwich.',
-    price: 299,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/cheesegrilled/400/300',
-    category: MenuCategory.BREAKFAST,
-  },
-  {
-    id: 45,
-    name: 'Pav Bhaji (4pc.)',
-    description: 'A flavorful mash of mixed vegetables served with soft, buttered bread rolls.',
-    price: 299,
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/pavbhaji/400/300',
-    category: MenuCategory.BREAKFAST,
-  },
+  // Breakfast
+  { id: 31, name: 'Corn Flakes Milk (Hot & Cold)', description: 'A classic breakfast of corn flakes served with your choice of hot or cold milk.', price: 175, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/cornflakes/400/300', category: MenuCategory.BREAKFAST, },
+  { id: 32, name: 'Puri Bhaji (4pc.)', description: 'Fluffy deep-fried bread served with a savory potato curry.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/puribhaji/400/300', category: MenuCategory.BREAKFAST, },
+  { id: 33, name: 'Aloo Paratha with Curd (2pc.)', description: 'Whole wheat flatbread stuffed with a spiced potato filling, served with curd.', price: 275, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/alooparatha/400/300', category: MenuCategory.BREAKFAST, },
+  { id: 34, name: 'Chole Bhature (2pc.)', description: 'A popular North Indian dish of spicy chickpea curry served with fried bread.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/cholebhature/400/300', category: MenuCategory.BREAKFAST, },
+  { id: 35, name: 'Toast with Butter & Jam', description: 'Crispy toasted bread served with butter and a selection of jams.', price: 119, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/toastjam/400/300', category: MenuCategory.BREAKFAST, },
+  { id: 36, name: 'Bread Butter', description: 'Simple and classic slices of bread generously spread with butter.', price: 99, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/breadbutter/400/300', category: MenuCategory.BREAKFAST, },
+  { id: 37, name: 'Aloo Bada (3pc.)', description: 'Spiced potato fritters, deep-fried to perfection.', price: 99, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/aloobada/400/300', category: MenuCategory.BREAKFAST, },
+  { id: 38, name: 'Poha / Upma', description: 'A choice of flattened rice flakes or semolina porridge, tempered with spices.', price: 149, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/poha/400/300', category: MenuCategory.BREAKFAST, },
+  { id: 39, name: 'Idli Sambhar (4pc.)', description: 'Steamed rice cakes served with a flavorful lentil-based vegetable stew.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/idli/400/300', category: MenuCategory.BREAKFAST, },
+  { id: 40, name: 'Veg Sandwich Plain', description: 'A simple sandwich with fresh vegetable fillings.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegsandwich/400/300', category: MenuCategory.BREAKFAST, },
+  { id: 41, name: 'Cheese Sandwich', description: 'A classic sandwich filled with delicious melted cheese.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/cheesesandwich/400/300', category: MenuCategory.BREAKFAST, },
+  { id: 42, name: 'Club Sandwich', description: 'A hearty multi-layered sandwich with assorted fillings.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/clubsandwich/400/300', category: MenuCategory.BREAKFAST, },
+  { id: 43, name: 'Veg Grilled Sandwich', description: 'A grilled sandwich packed with fresh vegetables.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/veggrilled/400/300', category: MenuCategory.BREAKFAST, },
+  { id: 44, name: 'Cheese Grilled Sandwich', description: 'A warm, gooey grilled cheese sandwich.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/cheesegrilled/400/300', category: MenuCategory.BREAKFAST, },
+  { id: 45, name: 'Pav Bhaji (4pc.)', description: 'A flavorful mash of mixed vegetables served with soft, buttered bread rolls.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/pavbhaji/400/300', category: MenuCategory.BREAKFAST, },
 
-  // NEW: Eggs
-  {
-    id: 46, name: 'Boiled Egg (3pc.)', description: 'Three perfectly boiled eggs.', price: 129, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/boiledegg/400/300', category: MenuCategory.EGGS,
-  },
-  {
-    id: 47, name: 'Boiled Egg Fry (3pc.)', description: 'Boiled eggs, sliced and pan-fried with spices.', price: 149, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/eggfry/400/300', category: MenuCategory.EGGS,
-  },
-  {
-    id: 48, name: 'Masala Omlette', description: 'A fluffy omelette with onions, tomatoes, and spices.', price: 175, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/masalaomlette/400/300', category: MenuCategory.EGGS,
-  },
-  {
-    id: 49, name: 'Cheese Omlette', description: 'A classic omelette filled with melted cheese.', price: 199, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/cheeseomlette/400/300', category: MenuCategory.EGGS,
-  },
-  {
-    id: 50, name: 'Poached Egg', description: 'Delicately poached eggs.', price: 129, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/poachedegg/400/300', category: MenuCategory.EGGS,
-  },
-  {
-    id: 51, name: 'Egg Chilly', description: 'A spicy and tangy dish made with fried boiled eggs.', price: 299, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/eggchilly/400/300', category: MenuCategory.EGGS,
-  },
-  {
-    id: 52, name: 'Egg Bhurji', description: 'Spiced scrambled eggs with onions and tomatoes.', price: 249, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/eggbhurji/400/300', category: MenuCategory.EGGS,
-  },
-  {
-    id: 53, name: 'Boiled Egg Bhurji', description: 'Scrambled boiled eggs with spices.', price: 299, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/boiledeggbhurji/400/300', category: MenuCategory.EGGS,
-  },
-  {
-    id: 54, name: 'Egg Pakora', description: 'Boiled eggs coated in gram flour batter and deep-fried.', price: 249, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/eggpakora/400/300', category: MenuCategory.EGGS,
-  },
+  // Eggs
+  { id: 46, name: 'Boiled Egg (3pc.)', description: 'Three perfectly boiled eggs.', price: 129, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/boiledegg/400/300', category: MenuCategory.EGGS, },
+  { id: 47, name: 'Boiled Egg Fry (3pc.)', description: 'Boiled eggs, sliced and pan-fried with spices.', price: 149, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/eggfry/400/300', category: MenuCategory.EGGS, },
+  { id: 48, name: 'Masala Omlette', description: 'A fluffy omelette with onions, tomatoes, and spices.', price: 175, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/masalaomlette/400/300', category: MenuCategory.EGGS, },
+  { id: 49, name: 'Cheese Omlette', description: 'A classic omelette filled with melted cheese.', price: 199, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/cheeseomlette/400/300', category: MenuCategory.EGGS, },
+  { id: 50, name: 'Poached Egg', description: 'Delicately poached eggs.', price: 129, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/poachedegg/400/300', category: MenuCategory.EGGS, },
+  { id: 51, name: 'Egg Chilly', description: 'A spicy and tangy dish made with fried boiled eggs.', price: 299, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/eggchilly/400/300', category: MenuCategory.EGGS, },
+  { id: 52, name: 'Egg Bhurji', description: 'Spiced scrambled eggs with onions and tomatoes.', price: 249, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/eggbhurji/400/300', category: MenuCategory.EGGS, },
+  { id: 53, name: 'Boiled Egg Bhurji', description: 'Scrambled boiled eggs with spices.', price: 299, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/boiledeggbhurji/400/300', category: MenuCategory.EGGS, },
+  { id: 54, name: 'Egg Pakora', description: 'Boiled eggs coated in gram flour batter and deep-fried.', price: 249, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/eggpakora/400/300', category: MenuCategory.EGGS, },
 
-  // NEW: Salad / Papad
-  {
-    id: 55, name: 'Green Salad', description: 'A mix of fresh garden greens.', price: 119, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/greensalad/400/300', category: MenuCategory.SALAD_PAPAD,
-  },
-  {
-    id: 56, name: 'Russian Salad', description: 'A creamy salad with diced vegetables and mayonnaise.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/russiansalad/400/300', category: MenuCategory.SALAD_PAPAD,
-  },
-  {
-    id: 57, name: 'Makhana Salad', description: 'A healthy salad with roasted fox nuts.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/makhanasalad/400/300', category: MenuCategory.SALAD_PAPAD,
-  },
-  {
-    id: 58, name: 'Kachumber Salad', description: 'A refreshing mix of chopped cucumber, onion, and tomato.', price: 99, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/kachumber/400/300', category: MenuCategory.SALAD_PAPAD,
-  },
-  {
-    id: 59, name: 'Onion Salad', description: 'Sliced onions with a simple dressing.', price: 49, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/onionsalad/400/300', category: MenuCategory.SALAD_PAPAD,
-  },
-  {
-    id: 60, name: 'Kaju Makhana Salad', description: 'A rich salad with cashews and fox nuts.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/kajumakhana/400/300', category: MenuCategory.SALAD_PAPAD,
-  },
-  {
-    id: 61, name: 'Sprouts Salad', description: 'A nutritious salad with mixed sprouts.', price: 199, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/sproutssalad/400/300', category: MenuCategory.SALAD_PAPAD,
-  },
-  {
-    id: 62, name: 'Roasted Papad', description: 'A crispy lentil cracker, roasted.', price: 49, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/roastedpapad/400/300', category: MenuCategory.SALAD_PAPAD,
-  },
-  {
-    id: 63, name: 'Fried Papad', description: 'A crispy lentil cracker, deep-fried.', price: 49, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/friedpapad/400/300', category: MenuCategory.SALAD_PAPAD,
-  },
-  {
-    id: 64, name: 'Masala Papad Fry/Roasted', description: 'Papad topped with chopped onions, tomatoes, and spices.', price: 79, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/masalapapad/400/300', category: MenuCategory.SALAD_PAPAD,
-  },
-  {
-    id: 65, name: 'Makki Papadi', description: 'Crispy corn flour crackers.', price: 59, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/makkipapadi/400/300', category: MenuCategory.SALAD_PAPAD,
-  },
+  // Salad / Papad
+  { id: 55, name: 'Green Salad', description: 'A mix of fresh garden greens.', price: 119, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/greensalad/400/300', category: MenuCategory.SALAD_PAPAD, },
+  { id: 56, name: 'Russian Salad', description: 'A creamy salad with diced vegetables and mayonnaise.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/russiansalad/400/300', category: MenuCategory.SALAD_PAPAD, },
+  { id: 57, name: 'Makhana Salad', description: 'A healthy salad with roasted fox nuts.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/makhanasalad/400/300', category: MenuCategory.SALAD_PAPAD, },
+  { id: 58, name: 'Kachumber Salad', description: 'A refreshing mix of chopped cucumber, onion, and tomato.', price: 99, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/kachumber/400/300', category: MenuCategory.SALAD_PAPAD, },
+  { id: 59, name: 'Onion Salad', description: 'Sliced onions with a simple dressing.', price: 49, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/onionsalad/400/300', category: MenuCategory.SALAD_PAPAD, },
+  { id: 60, name: 'Kaju Makhana Salad', description: 'A rich salad with cashews and fox nuts.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/kajumakhana/400/300', category: MenuCategory.SALAD_PAPAD, },
+  { id: 61, name: 'Sprouts Salad', description: 'A nutritious salad with mixed sprouts.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/sproutssalad/400/300', category: MenuCategory.SALAD_PAPAD, },
+  { id: 62, name: 'Roasted Papad', description: 'A crispy lentil cracker, roasted.', price: 49, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/roastedpapad/400/300', category: MenuCategory.SALAD_PAPAD, },
+  { id: 63, name: 'Fried Papad', description: 'A crispy lentil cracker, deep-fried.', price: 49, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/friedpapad/400/300', category: MenuCategory.SALAD_PAPAD, },
+  { id: 64, name: 'Masala Papad Fry/Roasted', description: 'Papad topped with chopped onions, tomatoes, and spices.', price: 79, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/masalapapad/400/300', category: MenuCategory.SALAD_PAPAD, },
+  { id: 65, name: 'Makki Papadi', description: 'Crispy corn flour crackers.', price: 59, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/makkipapadi/400/300', category: MenuCategory.SALAD_PAPAD, },
 
-  // NEW: Soup (veg)
-  {
-    id: 66, name: 'Cream of Tomato Soup', description: 'A rich and creamy tomato soup.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/tomatosoup/400/300', category: MenuCategory.SOUP_VEG,
-  },
-  {
-    id: 67, name: 'Lemon Coriander Soup', description: 'A light and zesty soup with lemon and coriander.', price: 199, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/lemoncoriander/400/300', category: MenuCategory.SOUP_VEG,
-  },
-  {
-    id: 68, name: 'Cream of Veg Soup', description: 'A creamy soup with mixed vegetables.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/creamofveg/400/300', category: MenuCategory.SOUP_VEG,
-  },
-  {
-    id: 69, name: 'Veg Manchow Soup', description: 'A popular Indo-Chinese soup with fried noodles.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/vegmanchow/400/300', category: MenuCategory.SOUP_VEG,
-  },
-  {
-    id: 70, name: 'Sweet Corn Veg Soup', description: 'A comforting soup with sweet corn and vegetables.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/sweetcornveg/400/300', category: MenuCategory.SOUP_VEG,
-  },
-  {
-    id: 71, name: 'Dal Shorba', description: 'A traditional Indian lentil soup.', price: 199, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/dalshorba/400/300', category: MenuCategory.SOUP_VEG,
-  },
-  {
-    id: 72, name: 'Palak Shorba', description: 'A healthy and flavorful spinach soup.', price: 199, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/palakshorba/400/300', category: MenuCategory.SOUP_VEG,
-  },
-  {
-    id: 73, name: 'Hot & Sour Veg Soup', description: 'A spicy and sour soup with vegetables.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/hotandsourveg/400/300', category: MenuCategory.SOUP_VEG,
-  },
+  // Soup (veg)
+  { id: 66, name: 'Cream of Tomato Soup', description: 'A rich and creamy tomato soup.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/tomatosoup/400/300', category: MenuCategory.SOUP_VEG, },
+  { id: 67, name: 'Lemon Coriander Soup', description: 'A light and zesty soup with lemon and coriander.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/lemoncoriander/400/300', category: MenuCategory.SOUP_VEG, },
+  { id: 68, name: 'Cream of Veg Soup', description: 'A creamy soup with mixed vegetables.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/creamofveg/400/300', category: MenuCategory.SOUP_VEG, },
+  { id: 69, name: 'Veg Manchow Soup', description: 'A popular Indo-Chinese soup with fried noodles.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegmanchow/400/300', category: MenuCategory.SOUP_VEG, },
+  { id: 70, name: 'Sweet Corn Veg Soup', description: 'A comforting soup with sweet corn and vegetables.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/sweetcornveg/400/300', category: MenuCategory.SOUP_VEG, },
+  { id: 71, name: 'Dal Shorba', description: 'A traditional Indian lentil soup.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/dalshorba/400/300', category: MenuCategory.SOUP_VEG, },
+  { id: 72, name: 'Palak Shorba', description: 'A healthy and flavorful spinach soup.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/palakshorba/400/300', category: MenuCategory.SOUP_VEG, },
+  { id: 73, name: 'Hot & Sour Veg Soup', description: 'A spicy and sour soup with vegetables.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/hotandsourveg/400/300', category: MenuCategory.SOUP_VEG, },
 
-  // NEW: Soup (non-veg)
-  {
-    id: 74, name: 'Sweet Corn Chicken Soup', description: 'A comforting soup with sweet corn and chicken.', price: 275, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/sweetcornchicken/400/300', category: MenuCategory.SOUP_NONVEG,
-  },
-  {
-    id: 75, name: 'Hot & Sour Chicken Soup', description: 'A spicy and sour soup with chicken.', price: 275, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/hotandsourchicken/400/300', category: MenuCategory.SOUP_NONVEG,
-  },
-  {
-    id: 76, name: 'Chicken Manchow Soup', description: 'A popular Indo-Chinese soup with chicken and fried noodles.', price: 275, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickenmanchow/400/300', category: MenuCategory.SOUP_NONVEG,
-  },
-  {
-    id: 77, name: 'Cream of Chicken Soup', description: 'A rich and creamy chicken soup.', price: 275, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/creamofchicken/400/300', category: MenuCategory.SOUP_NONVEG,
-  },
+  // Soup (non-veg)
+  { id: 74, name: 'Sweet Corn Chicken Soup', description: 'A comforting soup with sweet corn and chicken.', price: 275, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/sweetcornchicken/400/300', category: MenuCategory.SOUP_NONVEG, },
+  { id: 75, name: 'Hot & Sour Chicken Soup', description: 'A spicy and sour soup with chicken.', price: 275, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/hotandsourchicken/400/300', category: MenuCategory.SOUP_NONVEG, },
+  { id: 76, name: 'Chicken Manchow Soup', description: 'A popular Indo-Chinese soup with chicken and fried noodles.', price: 275, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenmanchow/400/300', category: MenuCategory.SOUP_NONVEG, },
+  { id: 77, name: 'Cream of Chicken Soup', description: 'A rich and creamy chicken soup.', price: 275, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/creamofchicken/400/300', category: MenuCategory.SOUP_NONVEG, },
 
-  // NEW: Indian Starters (Veg)
-  {
-    id: 78, name: 'Paneer Chilly', description: 'A spicy dish of fried paneer cubes.', price: 375, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/paneerchilly/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 79, name: 'Paneer Tikka', description: 'Marinated paneer cubes grilled to perfection.', price: 379, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/paneertikka/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 80, name: 'Paneer Malai Tikka', description: 'Creamy and mild paneer tikka.', price: 379, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/paneermalaitikka/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 81, name: 'Baby Corn Tikka', description: 'Grilled baby corn marinated in spices.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/babycorntikka/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 82, name: 'Mushroom Tikka', description: 'Marinated mushrooms grilled in a tandoor.', price: 349, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/mushroomtikka/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 83, name: 'Paneer Sticks', description: 'Crispy fried paneer sticks.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/paneersticks/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 84, name: 'Tandoori Platter (Assorted)', description: 'A platter of assorted tandoori vegetarian starters.', price: 399, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/tandooriplatter/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 85, name: 'Aloo Cheese Kabab', description: 'Kebab made with potato and cheese.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/aloocheesekabab/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 86, name: 'Veg Lolly Pop', description: 'A vegetarian version of the popular lollipop appetizer.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/veglollypop/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 87, name: 'Corn Roll', description: 'Crispy rolls filled with a corn mixture.', price: 275, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/cornroll/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 88, name: 'Peas Roll', description: 'Crispy rolls filled with a spiced pea mixture.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/peasroll/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 89, name: 'Peanut Plain', description: 'Roasted peanuts.', price: 99, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/peanutplain/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 90, name: 'Peanut Masala', description: 'Roasted peanuts tossed with spices, onions, and tomatoes.', price: 149, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/peanutmasala/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 91, name: 'Veg Pakora', description: 'Mixed vegetable fritters.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/vegpakora/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 92, name: 'Paneer Pakora', description: 'Paneer fritters.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/paneerpakora/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 93, name: 'Mushroom Chilly', description: 'A spicy dish of fried mushrooms.', price: 399, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/mushroomchilly/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 94, name: 'Potato Cheese Roll', description: 'Rolls filled with potato and cheese.', price: 275, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/potatocheeseroll/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 95, name: 'Crispy Cheese Paneer', description: 'Crispy fried paneer with cheese.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/crispycheesepaneer/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 96, name: 'Crispy Corn', description: 'Crispy fried corn kernels tossed in spices.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/crispycorn/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 97, name: 'Makki Malai Tikki', description: 'Patties made from corn and cream.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/makkimalaitikki/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 98, name: 'French Fries', description: 'Classic deep-fried potato strips.', price: 199, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/frenchfries/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 99, name: 'Veg Cutlet', description: 'Patties made from mixed vegetables.', price: 199, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/vegcutlet/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 100, name: 'Veg Triangle', description: 'Triangle-shaped vegetable pastries.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/vegtriangle/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 101, name: 'Achaari Paneer Tikka', description: 'Paneer tikka with a pickling spice marinade.', price: 379, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/achaaripaneer/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 102, name: 'Veg Seekh Kabab', description: 'Minced vegetable kebabs.', price: 275, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/vegseekhkabab/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 103, name: 'Tandoori Aloo', description: 'Potatoes marinated and cooked in a tandoor.', price: 199, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/tandoorialoo/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 104, name: 'Cheese Chilly Toast', description: 'Toast topped with cheese and chillies.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/cheesechillytoast/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 105, name: 'Aloo Chana Chaat', description: 'A tangy snack with potatoes and chickpeas.', price: 199, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/aloochanachaat/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 106, name: 'Hara Bhara Kabab', description: 'Kebabs made from spinach, peas, and potatoes.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/harabharakabab/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 107, name: 'Veg Spring Roll', description: 'Crispy rolls filled with vegetables.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/vegspringroll/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
-  {
-    id: 108, name: 'Mushroom Merry', description: 'A delightful mushroom appetizer.', price: 349, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/mushroommerry/400/300', category: MenuCategory.INDIAN_STARTERS_VEG,
-  },
+  // Indian Starters (Veg)
+  { id: 78, name: 'Paneer Chilly', description: 'A spicy dish of fried paneer cubes.', price: 375, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/paneerchilly/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 79, name: 'Paneer Tikka', description: 'Marinated paneer cubes grilled to perfection.', price: 379, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/paneertikka/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 80, name: 'Paneer Malai Tikka', description: 'Creamy and mild paneer tikka.', price: 379, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/paneermalaitikka/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 81, name: 'Baby Corn Tikka', description: 'Grilled baby corn marinated in spices.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/babycorntikka/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 82, name: 'Mushroom Tikka', description: 'Marinated mushrooms grilled in a tandoor.', price: 349, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/mushroomtikka/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 83, name: 'Paneer Sticks', description: 'Crispy fried paneer sticks.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/paneersticks/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 84, name: 'Tandoori Platter (Assorted)', description: 'A platter of assorted tandoori vegetarian starters.', price: 399, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/tandooriplatter/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 85, name: 'Aloo Cheese Kabab', description: 'Kebab made with potato and cheese.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/aloocheesekabab/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 86, name: 'Veg Lolly Pop', description: 'A vegetarian version of the popular lollipop appetizer.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/veglollypop/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 87, name: 'Corn Roll', description: 'Crispy rolls filled with a corn mixture.', price: 275, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/cornroll/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 88, name: 'Peas Roll', description: 'Crispy rolls filled with a spiced pea mixture.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/peasroll/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 89, name: 'Peanut Plain', description: 'Roasted peanuts.', price: 99, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/peanutplain/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 90, name: 'Peanut Masala', description: 'Roasted peanuts tossed with spices, onions, and tomatoes.', price: 149, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/peanutmasala/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 91, name: 'Veg Pakora', description: 'Mixed vegetable fritters.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegpakora/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 92, name: 'Paneer Pakora', description: 'Paneer fritters.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/paneerpakora/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 93, name: 'Mushroom Chilly', description: 'A spicy dish of fried mushrooms.', price: 399, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/mushroomchilly/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 94, name: 'Potato Cheese Roll', description: 'Rolls filled with potato and cheese.', price: 275, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/potatocheeseroll/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 95, name: 'Crispy Cheese Paneer', description: 'Crispy fried paneer with cheese.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/crispycheesepaneer/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 96, name: 'Crispy Corn', description: 'Crispy fried corn kernels tossed in spices.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/crispycorn/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 97, name: 'Makki Malai Tikki', description: 'Patties made from corn and cream.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/makkimalaitikki/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 98, name: 'French Fries', description: 'Classic deep-fried potato strips.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/frenchfries/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 99, name: 'Veg Cutlet', description: 'Patties made from mixed vegetables.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegcutlet/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 100, name: 'Veg Triangle', description: 'Triangle-shaped vegetable pastries.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegtriangle/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 101, name: 'Achaari Paneer Tikka', description: 'Paneer tikka with a pickling spice marinade.', price: 379, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/achaaripaneer/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 102, name: 'Veg Seekh Kabab', description: 'Minced vegetable kebabs.', price: 275, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegseekhkabab/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 103, name: 'Tandoori Aloo', description: 'Potatoes marinated and cooked in a tandoor.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/tandoorialoo/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 104, name: 'Cheese Chilly Toast', description: 'Toast topped with cheese and chillies.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/cheesechillytoast/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 105, name: 'Aloo Chana Chaat', description: 'A tangy snack with potatoes and chickpeas.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/aloochanachaat/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 106, name: 'Hara Bhara Kabab', description: 'Kebabs made from spinach, peas, and potatoes.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/harabharakabab/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 107, name: 'Veg Spring Roll', description: 'Crispy rolls filled with vegetables.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegspringroll/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
+  { id: 108, name: 'Mushroom Merry', description: 'A delightful mushroom appetizer.', price: 349, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/mushroommerry/400/300', category: MenuCategory.INDIAN_STARTERS_VEG, },
 
-  // NEW: Indian Starters (Non-Veg)
-  {
-    id: 109, name: 'Chicken Tikka', description: 'Classic grilled chicken tikka.', price: 449, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickentikka/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 110, name: 'Murg Tandoori (Full)', description: 'A whole chicken marinated and cooked in a tandoor.', price: 599, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/murgtandoorifull/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 111, name: 'Murg Tandoori (Half)', description: 'Half a chicken marinated and cooked in a tandoor.', price: 299, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/murgtandoorihalf/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 112, name: 'Chicken Seekh Kabab', description: 'Minced chicken kebabs.', price: 399, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickenseekhkabab/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 113, name: 'Fish Tikka', description: 'Marinated fish pieces grilled in a tandoor.', price: 449, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/fishtikka/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 114, name: 'Tawa Fish', description: 'Fish shallow-fried on a griddle.', price: 449, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/tawafish/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 115, name: 'Fish Finger', description: 'Crispy fried fish fingers.', price: 449, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/fishfinger/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 116, name: 'Chicken Bhujma', description: 'A flavorful chicken preparation.', price: 449, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickenbhujma/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 117, name: 'Chicken Lolly Pop', description: 'Frenched chicken winglets.', price: 399, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickenlollypop/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 118, name: 'Toasted Chicken Sandwich', description: 'A toasted sandwich with chicken filling.', price: 299, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/toastedchickensandwich/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 119, name: 'Chicken Sandwich', description: 'A classic sandwich with chicken filling.', price: 275, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickensandwich/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 120, name: 'Bhujma Mutton', description: 'A flavorful mutton preparation.', price: 475, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/bhujmamutton/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 121, name: 'Murg Tikka Afghani', description: 'Creamy and mild chicken tikka.', price: 475, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/murgafghani/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 122, name: 'Murg Tikka Adraki', description: 'Chicken tikka with a ginger flavor.', price: 475, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/murgadraki/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 123, name: 'Juicy Chicken Tikka', description: 'Extra succulent chicken tikka.', price: 475, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/juicychicken/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 124, name: 'Murg Lehsuni Tikka', description: 'Chicken tikka with a garlic flavor.', price: 475, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/murglehsuni/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 125, name: 'Chilly Chicken', description: 'A popular Indo-Chinese chicken dish.', price: 399, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chillychicken/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 126, name: 'Chicken Manchurian', description: 'An Indo-Chinese dish of chicken in a savory sauce.', price: 399, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickenmanchurian/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 127, name: 'Chicken Spring Roll', description: 'Crispy rolls with chicken filling.', price: 399, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickenspringroll/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 128, name: 'Shredded Chicken Hot (Garlic Sauce)', description: 'Shredded chicken in a hot garlic sauce.', price: 399, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/shreddedchicken/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 129, name: 'Chicken Shanghai', description: 'Chicken prepared in a Shanghai style.', price: 399, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickenshanghai/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 130, name: 'Lemon Chicken', description: 'A tangy chicken dish with lemon.', price: 399, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/lemonchicken/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 131, name: 'Schezwan Chicken', description: 'Spicy chicken in Schezwan sauce.', price: 349, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/schezwanchicken/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 132, name: 'Chicken Chowmein', description: 'Stir-fried noodles with chicken.', price: 349, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickenchowmein/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 133, name: 'Chicken Hong Kong Style', description: 'Chicken prepared in Hong Kong style.', price: 399, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickenhongkong/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
-  {
-    id: 134, name: 'Chicken Dana', description: 'A special chicken preparation.', price: 349, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickendana/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG,
-  },
+  // Indian Starters (Non-Veg)
+  { id: 109, name: 'Chicken Tikka', description: 'Classic grilled chicken tikka.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickentikka/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 110, name: 'Murg Tandoori (Full)', description: 'A whole chicken marinated and cooked in a tandoor.', price: 599, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/murgtandoorifull/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 111, name: 'Murg Tandoori (Half)', description: 'Half a chicken marinated and cooked in a tandoor.', price: 299, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/murgtandoorihalf/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 112, name: 'Chicken Seekh Kabab', description: 'Minced chicken kebabs.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenseekhkabab/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 113, name: 'Fish Tikka', description: 'Marinated fish pieces grilled in a tandoor.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/fishtikka/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 114, name: 'Tawa Fish', description: 'Fish shallow-fried on a griddle.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/tawafish/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 115, name: 'Fish Finger', description: 'Crispy fried fish fingers.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/fishfinger/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 116, name: 'Chicken Bhujma', description: 'A flavorful chicken preparation.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenbhujma/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 117, name: 'Chicken Lolly Pop', description: 'Frenched chicken winglets.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenlollypop/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 118, name: 'Toasted Chicken Sandwich', description: 'A toasted sandwich with chicken filling.', price: 299, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/toastedchickensandwich/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 119, name: 'Chicken Sandwich', description: 'A classic sandwich with chicken filling.', price: 275, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickensandwich/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 120, name: 'Bhujma Mutton', description: 'A flavorful mutton preparation.', price: 475, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/bhujmamutton/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 121, name: 'Murg Tikka Afghani', description: 'Creamy and mild chicken tikka.', price: 475, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/murgafghani/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 122, name: 'Murg Tikka Adraki', description: 'Chicken tikka with a ginger flavor.', price: 475, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/murgadraki/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 123, name: 'Juicy Chicken Tikka', description: 'Extra succulent chicken tikka.', price: 475, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/juicychicken/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 124, name: 'Murg Lehsuni Tikka', description: 'Chicken tikka with a garlic flavor.', price: 475, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/murglehsuni/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 125, name: 'Chilly Chicken', description: 'A popular Indo-Chinese chicken dish.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chillychicken/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 126, name: 'Chicken Manchurian', description: 'An Indo-Chinese dish of chicken in a savory sauce.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenmanchurian/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 127, name: 'Chicken Spring Roll', description: 'Crispy rolls with chicken filling.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenspringroll/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 128, name: 'Shredded Chicken Hot (Garlic Sauce)', description: 'Shredded chicken in a hot garlic sauce.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/shreddedchicken/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 129, name: 'Chicken Shanghai', description: 'Chicken prepared in a Shanghai style.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenshanghai/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 130, name: 'Lemon Chicken', description: 'A tangy chicken dish with lemon.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/lemonchicken/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 131, name: 'Schezwan Chicken', description: 'Spicy chicken in Schezwan sauce.', price: 349, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/schezwanchicken/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 132, name: 'Chicken Chowmein', description: 'Stir-fried noodles with chicken.', price: 349, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenchowmein/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 133, name: 'Chicken Hong Kong Style', description: 'Chicken prepared in Hong Kong style.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenhongkong/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
+  { id: 134, name: 'Chicken Dana', description: 'A special chicken preparation.', price: 349, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickendana/400/300', category: MenuCategory.INDIAN_STARTERS_NONVEG, },
 
-  // NEW: Starters (Veg)
-  {
-    id: 135, name: 'Veg Cigar Roll', description: 'Crispy, cigar-shaped vegetable rolls.', price: 275, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/vegcigarroll/400/300', category: MenuCategory.STARTERS_VEG,
-  },
-  {
-    id: 136, name: 'Dragon Paneer Chilly', description: 'A fiery version of Paneer Chilly.', price: 349, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/dragonpaneer/400/300', category: MenuCategory.STARTERS_VEG,
-  },
-  {
-    id: 137, name: 'Soya Chilly', description: 'A spicy dish made with soya chunks.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/soyachilly/400/300', category: MenuCategory.STARTERS_VEG,
-  },
-  {
-    id: 138, name: 'Oriental Gold Coin', description: 'A classic Indo-Chinese appetizer.', price: 375, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/orientalgoldcoin/400/300', category: MenuCategory.STARTERS_VEG,
-  },
+  // Starters (Veg)
+  { id: 135, name: 'Veg Cigar Roll', description: 'Crispy, cigar-shaped vegetable rolls.', price: 275, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegcigarroll/400/300', category: MenuCategory.STARTERS_VEG, },
+  { id: 136, name: 'Dragon Paneer Chilly', description: 'A fiery version of Paneer Chilly.', price: 349, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/dragonpaneer/400/300', category: MenuCategory.STARTERS_VEG, },
+  { id: 137, name: 'Soya Chilly', description: 'A spicy dish made with soya chunks.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/soyachilly/400/300', category: MenuCategory.STARTERS_VEG, },
+  { id: 138, name: 'Oriental Gold Coin', description: 'A classic Indo-Chinese appetizer.', price: 375, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/orientalgoldcoin/400/300', category: MenuCategory.STARTERS_VEG, },
 
-  // NEW: Starters (Non-Veg)
-  {
-    id: 139, name: 'Chicken Malai Tikka', description: 'Creamy and succulent grilled chicken.', price: 449, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickenmalaitikka/400/300', category: MenuCategory.STARTERS_NONVEG,
-  },
-  {
-    id: 140, name: 'Fish Bhujma', description: 'A flavorful fish preparation.', price: 449, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/fishbhujma/400/300', category: MenuCategory.STARTERS_NONVEG,
-  },
-  {
-    id: 141, name: 'Fish Amritsari', description: 'A popular fried fish dish from Amritsar.', price: 449, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/fishamritsari/400/300', category: MenuCategory.STARTERS_NONVEG,
-  },
-  {
-    id: 142, name: 'American Chop Suey (Chicken)', description: 'A classic American-Chinese dish with chicken.', price: 399, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/americanchopsuey/400/300', category: MenuCategory.STARTERS_NONVEG,
-  },
+  // Starters (Non-Veg)
+  { id: 139, name: 'Chicken Malai Tikka', description: 'Creamy and succulent grilled chicken.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenmalaitikka/400/300', category: MenuCategory.STARTERS_NONVEG, },
+  { id: 140, name: 'Fish Bhujma', description: 'A flavorful fish preparation.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/fishbhujma/400/300', category: MenuCategory.STARTERS_NONVEG, },
+  { id: 141, name: 'Fish Amritsari', description: 'A popular fried fish dish from Amritsar.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/fishamritsari/400/300', category: MenuCategory.STARTERS_NONVEG, },
+  { id: 142, name: 'American Chop Suey (Chicken)', description: 'A classic American-Chinese dish with chicken.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/americanchopsuey/400/300', category: MenuCategory.STARTERS_NONVEG, },
 
-  // NEW: Indian Main Course (Veg)
-  {
-    id: 143, name: 'Paneer Butter Masala', description: 'Indian cottage cheese in a luscious tomato and butter gravy.', price: 399, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/paneerbuttermasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 144, name: 'Paneer Tikka Masala', description: 'Grilled paneer in a spiced gravy.', price: 429, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/paneertikkamasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 145, name: 'Paneer Laziz', description: 'A delicious and rich paneer curry.', price: 399, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/paneerlaziz/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 146, name: 'Malai Kofta', description: 'Paneer and vegetable dumplings in a creamy sauce.', price: 399, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/malaikofta/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 147, name: 'Navratan Korma', description: 'A creamy curry with nine different vegetables and nuts.', price: 399, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/navratankorma/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 148, name: 'Kaju Curry', description: 'A rich and creamy curry made with cashews.', price: 499, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/kajucurry/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 149, name: 'Mix Veg.', description: 'A curry with a mix of seasonal vegetables.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/mixveg/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 150, name: 'Veg Kolhapuri', description: 'A spicy mixed vegetable curry from Kolhapur.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/vegkolhapuri/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 151, name: 'Veg Jaipuri', description: 'A mixed vegetable curry with a distinct Jaipuri flavor.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/vegjaipuri/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 152, name: 'Matar Paneer', description: 'A classic curry with peas and paneer.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/matarpaneer/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 153, name: 'Kadai Paneer', description: 'Paneer cooked with bell peppers and onions in a wok.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/kadaipaneer/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 154, name: 'Paneer Chulbuli', description: 'A playful and tangy paneer preparation.', price: 349, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/paneerchulbuli/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 155, name: 'Palak Paneer', description: 'Paneer in a creamy spinach gravy.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/palakpaneer/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 156, name: 'Veg Jalfrezi', description: 'A tangy stir-fry of mixed vegetables.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/vegjalfrezi/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 157, name: 'Angoori Curry', description: 'A special grape-based curry.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/angooricurry/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 158, name: 'Dum Aloo Punjabi', description: 'Baby potatoes cooked in a rich Punjabi gravy.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/dumaloopunjabi/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 159, name: 'Aloo Gobhi Adraki', description: 'A curry of potato and cauliflower with ginger.', price: 275, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/aloogobhiadraki/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 160, name: 'Veg Kofta Curry', description: 'Vegetable dumplings in a savory curry.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/vegkoftacurry/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 161, name: 'Chana Masala', description: 'A classic chickpea curry.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/chanamasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 162, name: 'Aloo Jeera Capsicum', description: 'A simple curry of potato, cumin, and bell pepper.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/aloojeeracapsicum/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 163, name: 'Dal Tadka', description: 'Yellow lentils tempered with spices.', price: 275, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/daltadka/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 164, name: 'Dal Makhani', description: 'Creamy black lentils slow-cooked to perfection.', price: 349, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/dalmakhani/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 165, name: 'Rajma Curry', description: 'A flavorful curry made with kidney beans.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/rajmacurry/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 166, name: 'Aloo Gobhi Matar', description: 'A curry of potato, cauliflower, and peas.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/aloogobhimatar/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 167, name: 'Sev Tomato', description: 'A tangy and savory Gujarati curry.', price: 249, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/sevtomato/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 168, name: 'Bhindi Masala', description: 'Okra cooked in a spiced onion-tomato gravy.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/bhindimasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 169, name: 'Creamy Onion Masala', description: 'A rich and creamy onion-based curry.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/creamyonionmasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 170, name: 'Paneer Mushroom Butter Masala', description: 'A rich curry with paneer and mushrooms.', price: 399, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/paneermushroom/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 171, name: 'Mushroom Masala', description: 'Mushrooms in a spiced gravy.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/mushroommasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
-  {
-    id: 172, name: 'Matar Mushroom', description: 'A curry with peas and mushrooms.', price: 299, type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/matarmushroom/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG,
-  },
+  // Indian Main Course (Veg)
+  { id: 143, name: 'Paneer Butter Masala', description: 'Indian cottage cheese in a luscious tomato and butter gravy.', price: 399, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/paneerbuttermasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 144, name: 'Paneer Tikka Masala', description: 'Grilled paneer in a spiced gravy.', price: 429, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/paneertikkamasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 145, name: 'Paneer Laziz', description: 'A delicious and rich paneer curry.', price: 399, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/paneerlaziz/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 146, name: 'Malai Kofta', description: 'Paneer and vegetable dumplings in a creamy sauce.', price: 399, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/malaikofta/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 147, name: 'Navratan Korma', description: 'A creamy curry with nine different vegetables and nuts.', price: 399, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/navratankorma/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 148, name: 'Kaju Curry', description: 'A rich and creamy curry made with cashews.', price: 499, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/kajucurry/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 149, name: 'Mix Veg.', description: 'A curry with a mix of seasonal vegetables.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/mixveg/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 150, name: 'Veg Kolhapuri', description: 'A spicy mixed vegetable curry from Kolhapur.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegkolhapuri/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 151, name: 'Veg Jaipuri', description: 'A mixed vegetable curry with a distinct Jaipuri flavor.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegjaipuri/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 152, name: 'Matar Paneer', description: 'A classic curry with peas and paneer.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/matarpaneer/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 153, name: 'Kadai Paneer', description: 'Paneer cooked with bell peppers and onions in a wok.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/kadaipaneer/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 154, name: 'Paneer Chulbuli', description: 'A playful and tangy paneer preparation.', price: 349, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/paneerchulbuli/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 155, name: 'Palak Paneer', description: 'Paneer in a creamy spinach gravy.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/palakpaneer/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 156, name: 'Veg Jalfrezi', description: 'A tangy stir-fry of mixed vegetables.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegjalfrezi/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 157, name: 'Angoori Curry', description: 'A special grape-based curry.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/angooricurry/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 158, name: 'Dum Aloo Punjabi', description: 'Baby potatoes cooked in a rich Punjabi gravy.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/dumaloopunjabi/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 159, name: 'Aloo Gobhi Adraki', description: 'A curry of potato and cauliflower with ginger.', price: 275, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/aloogobhiadraki/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 160, name: 'Veg Kofta Curry', description: 'Vegetable dumplings in a savory curry.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegkoftacurry/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 161, name: 'Chana Masala', description: 'A classic chickpea curry.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/chanamasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 162, name: 'Aloo Jeera Capsicum', description: 'A simple curry of potato, cumin, and bell pepper.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/aloojeeracapsicum/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 163, name: 'Dal Tadka', description: 'Yellow lentils tempered with spices.', price: 275, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/daltadka/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 164, name: 'Dal Makhani', description: 'Creamy black lentils slow-cooked to perfection.', price: 349, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/dalmakhani/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 165, name: 'Rajma Curry', description: 'A flavorful curry made with kidney beans.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/rajmacurry/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 166, name: 'Aloo Gobhi Matar', description: 'A curry of potato, cauliflower, and peas.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/aloogobhimatar/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 167, name: 'Sev Tomato', description: 'A tangy and savory Gujarati curry.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/sevtomato/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 168, name: 'Bhindi Masala', description: 'Okra cooked in a spiced onion-tomato gravy.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/bhindimasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 169, name: 'Creamy Onion Masala', description: 'A rich and creamy onion-based curry.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/creamyonionmasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 170, name: 'Paneer Mushroom Butter Masala', description: 'A rich curry with paneer and mushrooms.', price: 399, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/paneermushroom/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 171, name: 'Mushroom Masala', description: 'Mushrooms in a spiced gravy.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/mushroommasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
+  { id: 172, name: 'Matar Mushroom', description: 'A curry with peas and mushrooms.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/matarmushroom/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_VEG, },
 
-  // NEW: Indian Main Course (Non-Veg)
-  {
-    id: 173, name: 'Butter Chicken (Full)', description: 'A full portion of classic butter chicken.', price: 649, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/butterchickenfull/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG,
-  },
-  {
-    id: 174, name: 'Butter Chicken (Half)', description: 'A half portion of classic butter chicken.', price: 399, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/butterchickenhalf/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG,
-  },
-  {
-    id: 175, name: 'Murg Mewari', description: 'A traditional Rajasthani chicken curry.', price: 399, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/murgmewari/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG,
-  },
-  {
-    id: 176, name: 'Chicken Kadai', description: 'Chicken cooked with bell peppers and onions in a wok.', price: 449, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickenkadai/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG,
-  },
-  {
-    id: 177, name: 'Safed Chicken', description: 'A white, creamy chicken curry.', price: 399, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/safedchicken/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG,
-  },
-  {
-    id: 178, name: 'Chicken Masala (Full)', description: 'A full portion of flavorful chicken masala.', price: 649, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickenmasalafull/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG,
-  },
-  {
-    id: 179, name: 'Chicken Masala (Half)', description: 'A half portion of flavorful chicken masala.', price: 429, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickenmasalahalf/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG,
-  },
-  {
-    id: 180, name: 'Chicken Jalfrezi', description: 'A tangy stir-fry of chicken and vegetables.', price: 399, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickenjalfrezi/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG,
-  },
-  {
-    id: 181, name: 'Handi Murg Navratan', description: 'A rich and creamy chicken curry with nine jewels.', price: 449, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/handimurg/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG,
-  },
-  {
-    id: 182, name: 'Keema Hyderabadi', description: 'Minced meat cooked in a Hyderabadi style.', price: 549, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/keemahyderabadi/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG,
-  },
-  {
-    id: 183, name: 'Mutton Lal Maas', description: 'A fiery Rajasthani mutton curry.', price: 499, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/lalmaas/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG,
-  },
-  {
-    id: 184, name: 'Fish Curry', description: 'A simple and flavorful fish curry.', price: 399, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/fishcurry/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG,
-  },
-  {
-    id: 185, name: 'Chicken Tikka Masala', description: 'Grilled chicken chunks in a rich, creamy, and spiced tomato sauce.', price: 449, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickentikkamasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG,
-  },
-  {
-    id: 186, name: 'Egg Curry', description: 'Boiled eggs in a savory curry.', price: 299, type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/eggcurry/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG,
-  },
+  // Indian Main Course (Non-Veg)
+  { id: 173, name: 'Butter Chicken (Full)', description: 'A full portion of classic butter chicken.', price: 649, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/butterchickenfull/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG, },
+  { id: 174, name: 'Butter Chicken (Half)', description: 'A half portion of classic butter chicken.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/butterchickenhalf/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG, },
+  { id: 175, name: 'Murg Mewari', description: 'A traditional Rajasthani chicken curry.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/murgmewari/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG, },
+  { id: 176, name: 'Chicken Kadai', description: 'Chicken cooked with bell peppers and onions in a wok.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenkadai/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG, },
+  { id: 177, name: 'Safed Chicken', description: 'A white, creamy chicken curry.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/safedchicken/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG, },
+  { id: 178, name: 'Chicken Masala (Full)', description: 'A full portion of flavorful chicken masala.', price: 649, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenmasalafull/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG, },
+  { id: 179, name: 'Chicken Masala (Half)', description: 'A half portion of flavorful chicken masala.', price: 429, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenmasalahalf/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG, },
+  { id: 180, name: 'Chicken Jalfrezi', description: 'A tangy stir-fry of chicken and vegetables.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenjalfrezi/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG, },
+  { id: 182, name: 'Keema Hyderabadi', description: 'Minced meat cooked in a Hyderabadi style.', price: 549, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/keemahyderabadi/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG, },
+  { id: 183, name: 'Mutton Lal Maas', description: 'A fiery Rajasthani mutton curry.', price: 499, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/lalmaas/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG, },
+  { id: 184, name: 'Fish Curry', description: 'A simple and flavorful fish curry.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/fishcurry/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG, },
+  { id: 185, name: 'Chicken Tikka Masala', description: 'Grilled chicken chunks in a rich, creamy, and spiced tomato sauce.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickentikkamasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG, },
+  { id: 186, name: 'Egg Curry', description: 'Boiled eggs in a savory curry.', price: 299, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/eggcurry/400/300', category: MenuCategory.INDIAN_MAIN_COURSE_NONVEG, },
 
-  // Remaining original items
-  {
-    id: 7,
-    name: 'Tandoori Salmon',
-    description: 'Salmon marinated in yogurt and spices, grilled to perfection in a tandoor.',
-    price: 25.50, // Note: Price might need updating to INR
-    type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/salmon/400/300',
-    category: MenuCategory.CHEF_SPECIAL_MAIN_COURSE_NONVEG,
-  },
-  {
-    id: 12,
-    name: 'Garlic Naan',
-    description: 'Soft Indian flatbread topped with fresh garlic and cilantro.',
-    price: 5.00, // Note: Price might need updating to INR
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/naan/400/300',
-    category: MenuCategory.INDIAN_BREADS,
-  },
-  {
-    id: 13,
-    name: 'Butter Roti',
-    description: 'Whole wheat flatbread cooked in a tandoor and brushed with butter.',
-    price: 4.50, // Note: Price might need updating to INR
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/roti/400/300',
-    category: MenuCategory.INDIAN_BREADS,
-  },
-  {
-    id: 14,
-    name: 'Gulab Jamun',
-    description: 'Soft, melt-in-your-mouth milk solids dumplings soaked in a rose-flavored sugar syrup.',
-    price: 7.00, // Note: Price might need updating to INR
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/jamun/400/300',
-    category: MenuCategory.DESSERTS,
-  },
-  {
-    id: 15,
-    name: 'Ras Malai',
-    description: 'Spongy cottage cheese patties soaked in thickened, sweetened milk.',
-    price: 8.00, // Note: Price might need updating to INR
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/rasmalai/400/300',
-    category: MenuCategory.DESSERTS,
-  },
-  {
-    id: 6,
-    name: 'Vegetable Biryani',
-    description: 'Aromatic basmati rice cooked with mixed vegetables and fragrant spices.',
-    price: 17.00, // Note: Price might need updating to INR
-    type: ItemType.VEG,
-    imageUrl: 'https://picsum.photos/seed/vegbiryani/400/300',
-    category: MenuCategory.RICE_VEG,
-  },
-  {
-    id: 11,
-    name: 'Chicken Dum Biryani',
-    description: 'Slow-cooked basmati rice and chicken, layered with herbs and spices.',
-    price: 21.00, // Note: Price might need updating to INR
-    type: ItemType.NON_VEG,
-    imageUrl: 'https://picsum.photos/seed/chickenbiryani/400/300',
-    category: MenuCategory.RICE_NONVEG,
-  },
+  // Chef's Special (Veg)
+  { id: 187, name: 'Cheese Butter Masala', description: 'Melted cheese in a luscious tomato and butter gravy.', price: 449, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/cheesebuttermasala/400/300', category: MenuCategory.CHEF_SPECIAL_MAIN_COURSE_VEG, },
+  { id: 188, name: 'Laziz Khumb', description: 'A delicious and rich mushroom specialty.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/lazizkhumb/400/300', category: MenuCategory.CHEF_SPECIAL_MAIN_COURSE_VEG, },
+  { id: 189, name: 'Paneer Lababdar', description: 'A rich and creamy paneer dish with a unique flavor.', price: 399, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/paneerlababdar/400/300', category: MenuCategory.CHEF_SPECIAL_MAIN_COURSE_VEG, },
+  { id: 190, name: 'Mushroom Garlic Butter Masala', description: 'Mushrooms cooked in a garlic and butter-infused masala.', price: 349, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/mushroomgarlic/400/300', category: MenuCategory.CHEF_SPECIAL_MAIN_COURSE_VEG, },
+
+  // Chef's Special (Non-Veg)
+  { id: 191, name: 'Murg Patiala', description: 'A creamy and nutty chicken curry from Patiala.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/murgpatiala/400/300', category: MenuCategory.CHEF_SPECIAL_MAIN_COURSE_NONVEG, },
+  { id: 192, name: 'Handi Murg Navratan', description: 'A rich and creamy chicken curry with nine jewels, cooked in a handi.', price: 499, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/handimurg/400/300', category: MenuCategory.CHEF_SPECIAL_MAIN_COURSE_NONVEG, },
+  { id: 193, name: 'Dhuva Ghost', description: 'Smoky and tender mutton curry.', price: 499, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/dhuvaghost/400/300', category: MenuCategory.CHEF_SPECIAL_MAIN_COURSE_NONVEG, },
+  { id: 194, name: 'Mutton Rogan Josh', description: 'A signature Kashmiri mutton curry.', price: 499, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/roganjosh/400/300', category: MenuCategory.CHEF_SPECIAL_MAIN_COURSE_NONVEG, },
+
+  // Rajasthani Main Course
+  { id: 195, name: 'Besan Gatta Curry', description: 'Gram flour dumplings in a tangy yogurt-based curry.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/gattacurry/400/300', category: MenuCategory.RAJASTHANI_MAIN_COURSE, },
+  { id: 196, name: 'Kadi Pakora', description: 'A traditional curry with yogurt and gram flour fritters.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/kadipakora/400/300', category: MenuCategory.RAJASTHANI_MAIN_COURSE, },
+  { id: 197, name: 'Papad Mangodi', description: 'A unique curry made with papad and lentil dumplings.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/papadmangodi/400/300', category: MenuCategory.RAJASTHANI_MAIN_COURSE, },
+  { id: 198, name: 'Papad Methi', description: 'A curry with papad and fenugreek seeds.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/papadmethi/400/300', category: MenuCategory.RAJASTHANI_MAIN_COURSE, },
+  { id: 199, name: 'Jaisalmeri Chana Masala', description: 'A special chickpea curry from Jaisalmer.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/jaisalmerichana/400/300', category: MenuCategory.RAJASTHANI_MAIN_COURSE, },
+  { id: 200, name: 'Kadi Plain', description: 'A simple and tangy yogurt-based curry.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/kadiplain/400/300', category: MenuCategory.RAJASTHANI_MAIN_COURSE, },
+
+  // Raita
+  { id: 201, name: 'Curd / Dahi', description: 'Plain yogurt.', price: 99, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/curd/400/300', category: MenuCategory.RAITA, },
+  { id: 202, name: 'Veg Raita', description: 'Yogurt with mixed vegetables.', price: 149, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegrait/400/300', category: MenuCategory.RAITA, },
+  { id: 203, name: 'Boondi Raita', description: 'Yogurt with small fried gram flour balls.', price: 149, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/boondiraita/400/300', category: MenuCategory.RAITA, },
+  { id: 204, name: 'Pineapple Raita', description: 'Yogurt with sweet pineapple chunks.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/pineappleraita/400/300', category: MenuCategory.RAITA, },
+  { id: 205, name: 'Butter Milk', description: 'A refreshing spiced buttermilk drink.', price: 49, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/buttermilk/400/300', category: MenuCategory.RAITA, },
+  { id: 206, name: 'Lassi (Sweet & Salted)', description: 'A traditional yogurt-based drink, sweet or salted.', price: 99, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/lassi/400/300', category: MenuCategory.RAITA, },
+  { id: 207, name: 'Fruit Raita', description: 'Yogurt with a mix of fresh fruits.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/fruitraita/400/300', category: MenuCategory.RAITA, },
+
+  // Indian Breads
+  { id: 208, name: 'Plain Roti', description: 'Simple whole wheat flatbread.', price: 49, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/plainroti/400/300', category: MenuCategory.INDIAN_BREADS, },
+  { id: 209, name: 'Butter Roti', description: 'Whole wheat flatbread brushed with butter.', price: 59, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/butterroti/400/300', category: MenuCategory.INDIAN_BREADS, },
+  { id: 210, name: 'Tawa Roti', description: 'Flatbread cooked on a griddle.', price: 39, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/tawaroti/400/300', category: MenuCategory.INDIAN_BREADS, },
+  { id: 211, name: 'Missi Roti', description: 'A savory flatbread made from gram flour and spices.', price: 49, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/missiroti/400/300', category: MenuCategory.INDIAN_BREADS, },
+  { id: 212, name: 'Paneer Kulcha', description: 'A leavened bread stuffed with spiced paneer.', price: 99, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/paneerkulcha/400/300', category: MenuCategory.INDIAN_BREADS, },
+  { id: 213, name: 'Stuffed Kulcha', description: 'A leavened bread with a savory stuffing.', price: 99, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/stuffedkulcha/400/300', category: MenuCategory.INDIAN_BREADS, },
+  { id: 214, name: 'Plain Naan', description: 'A soft, leavened flatbread.', price: 59, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/plainnaan/400/300', category: MenuCategory.INDIAN_BREADS, },
+  { id: 215, name: 'Butter Naan', description: 'A soft, leavened flatbread brushed with butter.', price: 69, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/butternaan/400/300', category: MenuCategory.INDIAN_BREADS, },
+  { id: 216, name: 'Cheese Naan', description: 'Naan stuffed with melted cheese.', price: 129, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/cheesenaan/400/300', category: MenuCategory.INDIAN_BREADS, },
+  { id: 217, name: 'Garlic Naan', description: 'Naan topped with fresh garlic.', price: 99, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/garlicnaan/400/300', category: MenuCategory.INDIAN_BREADS, },
+  { id: 218, name: 'Cheese Garlic Naan', description: 'Naan stuffed with cheese and topped with garlic.', price: 149, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/cheesegarlicnaan/400/300', category: MenuCategory.INDIAN_BREADS, },
+  { id: 219, name: 'Stuff Paratha', description: 'A layered flatbread with a savory stuffing.', price: 99, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/stuffparatha/400/300', category: MenuCategory.INDIAN_BREADS, },
+  { id: 220, name: 'Pudina Paratha / Lachha Paratha', description: 'A choice of mint-flavored or layered paratha.', price: 79, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/pudinaparatha/400/300', category: MenuCategory.INDIAN_BREADS, },
+
+  // Rice (Veg)
+  { id: 221, name: 'Steam Rice', description: 'Plain steamed basmati rice.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/steamrice/400/300', category: MenuCategory.RICE_VEG, },
+  { id: 222, name: 'Jeera Rice', description: 'Basmati rice tempered with cumin seeds.', price: 249, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/jeerarice/400/300', category: MenuCategory.RICE_VEG, },
+  { id: 223, name: 'Curd Rice', description: 'A comforting South Indian dish of rice and yogurt.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/curdrice/400/300', category: MenuCategory.RICE_VEG, },
+  { id: 224, name: 'Veg Pulao', description: 'Basmati rice cooked with mixed vegetables.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegpulao/400/300', category: MenuCategory.RICE_VEG, },
+  { id: 225, name: 'Peas Pulao', description: 'Basmati rice cooked with green peas.', price: 275, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/peaspulao/400/300', category: MenuCategory.RICE_VEG, },
+  { id: 226, name: 'Kashmiri Pulao', description: 'A sweet and savory rice dish with fruits and nuts.', price: 349, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/kashmiripulao/400/300', category: MenuCategory.RICE_VEG, },
+  { id: 227, name: 'Veg Biryani with Curd', description: 'Aromatic basmati rice cooked with mixed vegetables and fragrant spices, served with curd.', price: 399, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegbiryani/400/300', category: MenuCategory.RICE_VEG, },
+  { id: 228, name: 'Gatta Biryani with Curd', description: 'A Rajasthani specialty biryani with gram flour dumplings.', price: 349, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/gattabiryani/400/300', category: MenuCategory.RICE_VEG, },
+  { id: 229, name: 'Kichadi', description: 'A wholesome dish of rice and lentils.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/kichadi/400/300', category: MenuCategory.RICE_VEG, },
+
+  // Rice (Non-Veg)
+  { id: 230, name: 'Chicken Biryani with Curd', description: 'Slow-cooked basmati rice and chicken, layered with herbs and spices, served with curd.', price: 475, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenbiryani/400/300', category: MenuCategory.RICE_NONVEG, },
+  { id: 231, name: 'Mutton Biryani with Curd', description: 'Aromatic rice and tender mutton cooked in a sealed pot.', price: 499, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/muttonbiryani/400/300', category: MenuCategory.RICE_NONVEG, },
+  { id: 232, name: 'Chicken Fried Rice', description: 'An Indo-Chinese style fried rice with chicken.', price: 349, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenfriedrice/400/300', category: MenuCategory.RICE_NONVEG, },
+  { id: 233, name: 'Egg Biryani', description: 'A flavorful biryani with boiled eggs.', price: 299, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/eggbiryani/400/300', category: MenuCategory.RICE_NONVEG, },
+  { id: 234, name: 'Egg Fried Rice', description: 'An Indo-Chinese style fried rice with egg.', price: 299, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/eggfriedrice/400/300', category: MenuCategory.RICE_NONVEG, },
+
+  // Desserts
+  { id: 235, name: 'Vanilla Ice Cream (2 Scoops)', description: 'Two scoops of classic vanilla ice cream.', price: 99, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vanillaicecream/400/300', category: MenuCategory.DESSERTS, },
+  { id: 236, name: 'Strawberry Ice Cream (2 Scoops)', description: 'Two scoops of refreshing strawberry ice cream.', price: 99, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/strawberryicecream/400/300', category: MenuCategory.DESSERTS, },
+  { id: 237, name: 'American Nuts Ice Cream (2 Scoops)', description: 'Two scoops of creamy ice cream with mixed nuts.', price: 149, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/americannuts/400/300', category: MenuCategory.DESSERTS, },
+  { id: 238, name: 'Butterscotch Ice Cream (2 Scoops)', description: 'Two scoops of rich butterscotch ice cream.', price: 149, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/butterscotch/400/300', category: MenuCategory.DESSERTS, },
+  { id: 239, name: 'Gulab Jamun (4pc.)', description: 'Soft, melt-in-your-mouth milk solids dumplings soaked in a rose-flavored sugar syrup.', price: 129, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/gulabjamun/400/300', category: MenuCategory.DESSERTS, },
+  { id: 240, name: 'Rasgulla (4pc.)', description: 'Spongy cottage cheese balls soaked in a light sugar syrup.', price: 149, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/rasgulla/400/300', category: MenuCategory.DESSERTS, },
+  { id: 241, name: 'Fruit Custard', description: 'A creamy custard mixed with fresh fruits.', price: 149, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/fruitcustard/400/300', category: MenuCategory.DESSERTS, },
+  { id: 242, name: 'Brownie With Ice Cream', description: 'A warm chocolate brownie served with a scoop of vanilla ice cream.', price: 199, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/brownie/400/300', category: MenuCategory.DESSERTS, },
 ];

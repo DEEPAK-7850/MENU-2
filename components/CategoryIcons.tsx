@@ -6,185 +6,198 @@ export const AllIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   </svg>
 );
 
-// --- Redesigned & Researched Icons ---
+// --- New, Bespoke, Highly Recognisable, Researched Icons with Color ---
 
 export const BeveragesIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path fill="#FEF3C7" d="M6.375 3h11.25L19.5 21h-15L6.375 3z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M6.375 3h11.25L19.5 21h-15L6.375 3z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M6.375 3a4.5 4.5 0 014.5 4.5" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7 21H16L17.5 9H5.5L7 21Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M5.5 9H17.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M10 5L12 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M18 6L20 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M12 9C9.5 9 8.25 7 9.5 5.5C10.75 4 12.5 4.5 13.5 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 );
 
 export const BreakfastIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path fill="#F3F4F6" d="M5.25 18.75a8.25 8.25 0 1013.5 0H5.25z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 18.75a8.25 8.25 0 1013.5 0" />
-    <circle cx="9" cy="15" r="2.25" fill="#fff" stroke="currentColor" />
-    <circle cx="15" cy="15" r="2.25" fill="#fff" stroke="currentColor" />
-    <circle cx="12" cy="10.5" r="2.25" fill="#fff" stroke="currentColor" />
-    <path stroke="#D97706" strokeLinecap="round" strokeLinejoin="round" d="M9 4.5v-1.5m3 1.5v-1.5m3 1.5v-1.5" />
-  </svg>
+    <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fillRule="evenodd" clipRule="evenodd" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M8.5 13.5C8.5 13.5 10 15 12 14C14 13 15.5 14.5 15.5 14.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="10" cy="9.5" r="1.5" fill="#C6A875"/>
+        <circle cx="10" cy="9.5" r="1.5" stroke="currentColor" strokeWidth="1.5"/>
+        <circle cx="14" cy="9.5" r="1.5" fill="#C6A875"/>
+        <circle cx="14" cy="9.5" r="1.5" stroke="currentColor" strokeWidth="1.5"/>
+    </svg>
 );
 
+
 export const EggsIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9 9 0 01-9-9c0-4.968 4.032-9 9-9s9 4.032 9 9-4.032 9-9 9z" />
-    <circle cx="12" cy="12" r="3" fill="#FDE68A" stroke="none" />
-  </svg>
+    <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 13C22 17.9706 17.5228 22 12 22C6.47715 22 2 17.9706 2 13C2 8.02944 6.47715 4 12 4C17.5228 4 22 8.02944 22 13Z" stroke="currentColor" strokeWidth="1.5"/>
+        <circle cx="12" cy="13" r="5" stroke="currentColor" strokeWidth="1.5"/>
+        <circle cx="12" cy="13" r="3" fill="#FFD60A"/>
+        <path d="M12 4V2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M16 6V4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M8 6V4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    </svg>
 );
 
 export const SaladPapadIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path fill="#FEF3C7" d="M16.5 20.25a7.5 7.5 0 100-15 7.5 7.5 0 000 15z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 20.25a7.5 7.5 0 100-15 7.5 7.5 0 000 15z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M3 15.75A7.5 7.5 0 0110.5 9h3" />
-    <path stroke="#4ADE80" strokeLinecap="round" strokeLinejoin="round" d="M7.5 6.75L6 9m3-2.25L7.5 9M3.75 9.75S4.5 8.25 6 9" />
-  </svg>
+    <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5"/>
+        <circle cx="10" cy="10" r="1" fill="#4CAF50"/>
+        <circle cx="14" cy="10" r="1" fill="#F44336"/>
+        <circle cx="12" cy="14" r="1" fill="#FF9800"/>
+        <path d="M12 2V4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M12 20V22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M20 12L22 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M2 12L4 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    </svg>
 );
 
+
 export const SoupVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path fill="#FDE68A" d="M2.25 12.75a9.75 9.75 0 0019.5 0v-0.75A9.75 9.75 0 0012 2.25C6.615 2.25 2.25 6.615 2.25 12v0.75z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75h19.5M2.25 12.75a9.75 9.75 0 0019.5 0v-.75a9.75 9.75 0 00-9.75-9.75C6.615 2.25 2.25 6.615 2.25 12v.75" />
-    <path stroke="#4ADE80" strokeLinecap="round" strokeLinejoin="round" d="M8 9V7m4 2V7m4-2V7" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 11C4 7.68629 6.68629 5 10 5H14C17.3137 5 20 7.68629 20 11V12H4V11Z" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M4 12H20V17C20 18.1046 19.1046 19 18 19H6C4.89543 19 4 18.1046 4 17V12Z" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M10 3V5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M14 3V5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M10.5 15.5C10.5 15.5 11 14 12 15C13 16 13.5 14.5 13.5 14.5" stroke="#4CAF50" strokeWidth="1.5" strokeLinecap="round"/>
   </svg>
 );
 
 export const SoupNonVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path fill="#FDE68A" d="M2.25 12.75a9.75 9.75 0 0019.5 0v-0.75A9.75 9.75 0 0012 2.25C6.615 2.25 2.25 6.615 2.25 12v0.75z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75h19.5M2.25 12.75a9.75 9.75 0 0019.5 0v-.75a9.75 9.75 0 00-9.75-9.75C6.615 2.25 2.25 6.615 2.25 12v.75" />
-    <path stroke="#5A1425" strokeLinecap="round" strokeLinejoin="round" d="M8 9V7m4 2V7m4-2V7" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 11C4 7.68629 6.68629 5 10 5H14C17.3137 5 20 7.68629 20 11V12H4V11Z" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M4 12H20V17C20 18.1046 19.1046 19 18 19H6C4.89543 19 4 18.1046 4 17V12Z" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M10 3V5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M14 3V5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M13.5 16L10 12.5L10 9.5C10 8.94772 10.4477 8.5 11 8.5C11.5523 8.5 12 8.94772 12 9.5L12 12.5L13.5 14" fill="#D2B48C" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 );
 
 export const IndianStartersVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15" />
-    <rect x="5" y="12" width="4.5" height="4.5" rx="1" fill="#FDE68A" stroke="currentColor" />
-    <circle cx="12" cy="12" r="2.25" fill="#4ADE80" stroke="currentColor" />
-    <rect x="14.5" y="5" width="4.5" height="4.5" rx="1" fill="#FDE68A" stroke="currentColor" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="4" y1="20" x2="20" y2="4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <rect x="5" y="12" width="6" height="6" rx="1" fill="#FF9800"/>
+    <rect x="5" y="12" width="6" height="6" rx="1" stroke="currentColor" strokeWidth="1.5"/>
+    <rect x="13" y="4" width="6" height="6" rx="1" fill="#4CAF50"/>
+    <rect x="13" y="4" width="6" height="6" rx="1" stroke="currentColor" strokeWidth="1.5"/>
   </svg>
 );
 
 export const IndianStartersNonVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path fill="#FDE68A" d="M11.25 11.25a3 3 0 100-6 3 3 0 000 6z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25a3 3 0 100-6 3 3 0 000 6z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l6 6" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 3.75l-3 4.5 4.5 3-6 6" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14.284 3.71607C17.4068 5.47034 18.5 9 18.5 12.5C18.5 19 11.5 21 6.5 16C1.5 11 5.5 5 11.1551 4.2001C12.026 -1.93323 14.284 3.71607 14.284 3.71607Z" fill="#E57373" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <circle cx="11.5" cy="8.5" r="1.5" fill="white" stroke="currentColor"/>
+    <path d="M16 15L18 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M13 17L15 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
   </svg>
 );
 
+
 export const StartersVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 15.75L12 3l8.25 12.75H3.75z" fill="#FDE68A" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 15.75L12 3l8.25 12.75H3.75z" />
-    <path stroke="#4ADE80" d="M12 12.75a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 10L12 3L20 10L12 21L4 10Z" fill="#F0E68C" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/>
+    <path d="M12 21V12" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/>
   </svg>
 );
 
 export const StartersNonVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 12.75l-8.25 8.25-3-3-3 3-8.25-8.25" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 7.5a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="13" r="5" fill="#E57373" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M12 8V2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M10 2H14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
   </svg>
 );
 
 export const IndianMainCourseVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path fill="#FDE68A" d="M5.25 12c0 3.314 2.686 6 6 6h1.5c3.314 0 6-2.686 6-6H5.25z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 6h7.5" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 6C4.007 6 3 7.007 3 8.25v1.5c0 1.243 1.007 2.25 2.25 2.25h13.5c1.243 0 2.25-1.007 2.25-2.25v-1.5C21 7.007 19.993 6 18.75 6" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 12c0 3.314 2.686 6 6 6h1.5c3.314 0 6-2.686 6-6" />
-    <path fill="#4ADE80" stroke="#4ADE80" strokeLinecap="round" strokeLinejoin="round" d="M9 15.75a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3 19.6569 3 17.7712 3 14V11Z" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" fill="#FF9800" stroke="currentColor" strokeWidth="1.5"/>
   </svg>
 );
 
 export const IndianMainCourseNonVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path fill="#FDE68A" d="M5.25 12c0 3.314 2.686 6 6 6h1.5c3.314 0 6-2.686 6-6H5.25z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 6h7.5" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 6C4.007 6 3 7.007 3 8.25v1.5c0 1.243 1.007 2.25 2.25 2.25h13.5c1.243 0 2.25-1.007 2.25-2.25v-1.5C21 7.007 19.993 6 18.75 6" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 12c0 3.314 2.686 6 6 6h1.5c3.314 0 6-2.686 6-6" />
-    <path fill="#5A1425" stroke="#5A1425" strokeLinecap="round" strokeLinejoin="round" d="M9 15.75a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3 19.6569 3 17.7712 3 14V11Z" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" fill="#E57373" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M13 14L10 11L10 9C10 8.44772 10.4477 8 11 8C11.5523 8 12 8.44772 12 9L12 11L13 12" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 );
 
 export const ChefSpecialVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12a8.25 8.25 0 0116.5 0H3.75z" />
-    <path stroke="#4ADE80" strokeLinecap="round" strokeLinejoin="round" d="M12 12V5.25" />
-    <circle cx="12" cy="3" r="1.5" fill="#4ADE80" stroke="currentColor" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 17H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M6 17V14C6 14 6.5 12 9 12C11.5 12 12.5 14 12.5 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M18 17V14C18 14 17.5 12 15 12C12.5 12 11.5 14 11.5 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M12 12V3M12 3L15 6M12 3L9 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M12.5 14C12.5 14 13 15 12 16C11 17 11.5 14 11.5 14" stroke="#4CAF50" strokeWidth="1.5" strokeLinecap="round"/>
   </svg>
 );
 
 export const ChefSpecialNonVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12a8.25 8.25 0 0116.5 0H3.75z" />
-    <path stroke="#5A1425" strokeLinecap="round" strokeLinejoin="round" d="M12 12V5.25" />
-    <circle cx="12" cy="3" r="1.5" fill="#5A1425" stroke="currentColor" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 17H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M6 17V14C6 14 6.5 12 9 12C11.5 12 12.5 14 12.5 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M18 17V14C18 14 17.5 12 15 12C12.5 12 11.5 14 11.5 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M12 12V3M12 3L15 6M12 3L9 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M13.2 14.5C14.7 15 15 16 14 17C13 18 12 16.5 12 15C12 13.5 12.5 13 13.2 12.5" fill="#E57373" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 );
 
 export const RajasthaniMainCourseIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <circle cx="12" cy="12" r="7.5" fill="#F3F4F6" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 19.5a7.5 7.5 0 100-15 7.5 7.5 0 000 15z" />
-    <circle cx="12" cy="12" r="2.25" fill="#fff" stroke="currentColor" />
-    <circle cx="8.25" cy="8.25" r="1.5" fill="#fff" stroke="currentColor" />
-    <circle cx="15.75" cy="8.25" r="1.5" fill="#fff" stroke="currentColor" />
-    <circle cx="8.25" cy="15.75" r="1.5" fill="#fff" stroke="currentColor" />
-    <circle cx="15.75" cy="15.75" r="1.5" fill="#fff" stroke="currentColor" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5"/>
+    <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="1.5"/>
+    <circle cx="7.5" cy="7.5" r="1.5" fill="#FFC107"/>
+    <circle cx="16.5" cy="7.5" r="1.5" fill="#4CAF50"/>
+    <circle cx="7.5" cy="16.5" r="1.5" fill="#F44336"/>
+    <circle cx="16.5" cy="16.5" r="1.5" fill="#9C27B0"/>
   </svg>
 );
 
 export const RaitaIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path fill="#F3F4F6" d="M3.75 13.5A6.75 6.75 0 0110.5 6.75h3A6.75 6.75 0 0120.25 13.5v4.5H3.75v-4.5z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5A6.75 6.75 0 0110.5 6.75h3A6.75 6.75 0 0120.25 13.5v4.5H3.75v-4.5z" />
-    <path fill="#4ADE80" stroke="none" d="M8.25 12a.75.75 0 100-1.5.75.75 0 000 1.5zm3.75 1.5a.75.75 0 100-1.5.75.75 0 000 1.5zm3-3a.75.75 0 100-1.5.75.75 0 000 1.5z" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 11C4 7.68629 6.68629 5 10 5H14C17.3137 5 20 7.68629 20 11V12H4V11Z" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M4 12H20V17C20 18.1046 19.1046 19 18 19H6C4.89543 19 4 18.1046 4 17V12Z" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M8 15C8.5 14 9.5 14 10 15C10.5 16 11.5 16 12 15C12.5 14 13.5 14 14 15C14.5 16 15.5 16 16 15" stroke="#4CAF50" strokeWidth="1.5" strokeLinecap="round"/>
   </svg>
 );
 
 export const IndianBreadsIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path fill="#FEF3C7" strokeLinecap="round" strokeLinejoin="round" d="M12 2.25C6.477 2.25 2 6.727 2 12.25c0 5.522 4.477 10 10 10 7.425 0 9.75-6.118 9.75-10.375C21.75 6.48 17.273 2.25 12 2.25z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 2.25C6.477 2.25 2 6.727 2 12.25c0 5.522 4.477 10 10 10 7.425 0 9.75-6.118 9.75-10.375C21.75 6.48 17.273 2.25 12 2.25z" />
-    <circle cx="10" cy="10" r="1" fill="#D97706" stroke="none"/>
-    <circle cx="15" cy="8" r="1" fill="#D97706" stroke="none"/>
-    <circle cx="14" cy="14" r="1" fill="#D97706" stroke="none"/>
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3 18.5V10.7071C3 10.074 3.26339 9.46591 3.73223 9L9 3.73223C9.53409 3.26339 10.2659 3 11 3H13C13.7341 3 14.4659 3.26339 15 3.73223L20.2678 9C20.7366 9.46591 21 10.074 21 10.7071V18.5C21 19.8807 19.8807 21 18.5 21H5.5C4.11929 21 3 19.8807 3 18.5Z" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M9 13C9 13 10 12 12 12C14 12 15 13 15 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <circle cx="9" cy="9" r="0.5" fill="currentColor"/>
+    <circle cx="15" cy="9" r="0.5" fill="currentColor"/>
   </svg>
 );
 
 export const RiceVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path fill="#F3F4F6" d="M4.5 12.75C4.5 15.519 7.84 17.75 12 17.75s7.5-2.231 7.5-5H4.5z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75C4.5 15.519 7.84 17.75 12 17.75s7.5-2.231 7.5-5" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75V11.5a1.5 1.5 0 011.5-1.5h12a1.5 1.5 0 011.5 1.5v1.25" />
-    <path stroke="#4ADE80" strokeLinecap="round" strokeLinejoin="round" d="M9 5.25V4.5m6 1.5V4.5" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 11C4 7.68629 6.68629 5 10 5H14C17.3137 5 20 7.68629 20 11V12H4V11Z" fill="#F5F5F5" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M4 12H20V17C20 18.1046 19.1046 19 18 19H6C4.89543 19 4 18.1046 4 17V12Z" stroke="currentColor" strokeWidth="1.5"/>
+    <circle cx="10" cy="15" r="1" fill="#4CAF50"/>
+    <circle cx="14" cy="15" r="1" fill="#FF9800"/>
   </svg>
 );
 
 export const RiceNonVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path fill="#F3F4F6" d="M4.5 12.75C4.5 15.519 7.84 17.75 12 17.75s7.5-2.231 7.5-5H4.5z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75C4.5 15.519 7.84 17.75 12 17.75s7.5-2.231 7.5-5" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75V11.5a1.5 1.5 0 011.5-1.5h12a1.5 1.5 0 011.5 1.5v1.25" />
-    <path stroke="#5A1425" strokeLinecap="round" strokeLinejoin="round" d="M9 5.25V4.5m6 1.5V4.5" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 11C4 7.68629 6.68629 5 10 5H14C17.3137 5 20 7.68629 20 11V12H4V11Z" fill="#F5F5F5" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M4 12H20V17C20 18.1046 19.1046 19 18 19H6C4.89543 19 4 18.1046 4 17V12Z" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M14 14C14 14 13 16 11 16C9 16 8 14 8 14" stroke="#A1887F" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M16 16C16 14.8954 15.1046 14 14 14H10C8.89543 14 8 14.8954 8 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
   </svg>
 );
 
 export const DessertsIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 14.25h16.5" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 14.25c0 2.485 3.358 4.5 7.5 4.5s7.5-2.015 7.5-4.5" />
-    <circle cx="9.75" cy="12" r="2.25" fill="#FDE68A" stroke="currentColor" />
-    <circle cx="14.25" cy="12" r="2.25" fill="#FDE68A" stroke="currentColor" />
-    <path fill="#EF4444" stroke="#EF4444" strokeLinecap="round" strokeLinejoin="round" d="M12 5.25s1.5 1.5 0 3c-1.5-1.5 0-3 0-3z" />
+  <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7 16H17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M5 12H19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12" stroke="currentColor" strokeWidth="1.5"/>
+    <circle cx="9" cy="12" r="2" fill="#8D6E63" stroke="currentColor" strokeWidth="1.5"/>
+    <circle cx="15" cy="12" r="2" fill="#8D6E63" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M12 5C12 5 13 2 15 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
   </svg>
 );

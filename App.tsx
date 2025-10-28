@@ -12,6 +12,29 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeFilter, setActiveFilter] = useState<FilterType>('all');
   const [activeCategory, setActiveCategory] = useState<CategoryFilterType>('all');
+  const [expandedCategories, setExpandedCategories] = useState<Set<MenuCategory>>(
+    new Set(CATEGORY_ORDER.length > 0 ? [CATEGORY_ORDER[0]] : [])
+  );
+
+  const handleToggleCategory = (category: MenuCategory) => {
+    setExpandedCategories(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(category)) {
+        newSet.delete(category);
+      } else {
+        newSet.add(category);
+      }
+      return newSet;
+    });
+  };
+
+  const handleCategorySelect = (category: CategoryFilterType) => {
+    setActiveCategory(category);
+    if (category !== 'all') {
+      // Automatically expand the selected category
+      setExpandedCategories(prev => new Set(prev).add(category));
+    }
+  };
 
   const filteredAndGroupedMenuItems = useMemo(() => {
     const filtered = MENU_DATA.filter(item => {
@@ -54,10 +77,14 @@ function App() {
         <FilterButtons activeFilter={activeFilter} setFilter={setActiveFilter} />
         <CategoryNavigation 
           activeCategory={activeCategory} 
-          setCategory={setActiveCategory} 
+          setCategory={handleCategorySelect} 
           categories={CATEGORY_ORDER} 
         />
-        <MenuList groupedItems={filteredAndGroupedMenuItems} />
+        <MenuList 
+          groupedItems={filteredAndGroupedMenuItems}
+          expandedCategories={expandedCategories}
+          onToggleCategory={handleToggleCategory}
+        />
       </main>
       <ScrollToTopButton />
     </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Logo } from './Logo';
 
 interface HeaderProps {
   searchQuery: string;
@@ -15,7 +14,10 @@ const SearchIcon = () => (
 export const Header: React.FC<HeaderProps> = ({ searchQuery, setSearchQuery }) => {
   return (
     <header className="mb-8 flex flex-col items-center">
-      <Logo className="w-16 h-16 mb-4 text-text-primary" />
+      <div className="flex items-center justify-center space-x-8 mb-6">
+        <img src="https://i.imgur.com/gK2uY7a.png" alt="Enaara Logo" className="h-16 w-auto" />
+        <img src="https://i.imgur.com/I2k5y58.png" alt="Oriental Palace Resorts Logo" className="h-20 w-auto" />
+      </div>
       <h1 className="text-4xl font-bold text-center text-text-primary mb-2">Digital Menu</h1>
       <p className="text-center text-lg text-text-secondary mb-6">Experience the taste of tomorrow</p>
       <div className="relative w-full">
