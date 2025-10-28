@@ -45,16 +45,20 @@ export const MenuList: React.FC<MenuListProps> = ({ groupedItems, expandedCatego
               className="w-full flex justify-between items-center py-4 px-2 focus:outline-none"
               aria-expanded={isExpanded}
             >
-              <h2 className="text-xl sm:text-2xl font-bold text-text-primary text-left">{category}</h2>
+              <h2 className="text-md sm:text-xl text-primary font-extrabold text-text-primary text-left">{category}</h2>
               <ChevronIcon isExpanded={isExpanded} />
             </button>
             <div 
-              className={`overflow-hidden transition-all duration-500 ease-in-out ${isExpanded ? 'max-h-[5000px]' : 'max-h-0'}`}
+              className={`grid transition-[grid-template-rows] duration-500 ease-in-out ${
+                isExpanded ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+              }`}
             >
-              <div className="pb-4 pt-2">
-                {groupedItems[category]?.map(item => (
-                  <MenuItem key={item.id} item={item} />
-                ))}
+              <div className="overflow-hidden">
+                <div className="pb-4 pt-2">
+                  {groupedItems[category]?.map((item, itemIndex) => (
+                    <MenuItem key={item.id} item={item} index={itemIndex} />
+                  ))}
+                </div>
               </div>
             </div>
           </div>

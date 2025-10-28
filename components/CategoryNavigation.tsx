@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { MenuCategory, CategoryFilterType } from '../types';
 import {
   AllIcon,
@@ -31,7 +30,7 @@ interface CategoryNavigationProps {
   categories: MenuCategory[];
 }
 
-const categoryIconMap: { [key in MenuCategory]: React.FC<React.SVGProps<SVGSVGElement>> } = {
+const iconMap: { [key in MenuCategory]: React.FC<React.SVGProps<SVGSVGElement>> } = {
   [MenuCategory.BEVERAGES]: BeveragesIcon,
   [MenuCategory.BREAKFAST]: BreakfastIcon,
   [MenuCategory.EGGS]: EggsIcon,
@@ -55,29 +54,60 @@ const categoryIconMap: { [key in MenuCategory]: React.FC<React.SVGProps<SVGSVGEl
 };
 
 export const CategoryNavigation: React.FC<CategoryNavigationProps> = ({ activeCategory, setCategory, categories }) => {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const activeItemRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (activeItemRef.current && scrollContainerRef.current) {
+      const container = scrollContainerRef.current;
+      const activeItem = activeItemRef.current;
+      const containerRect = container.getBoundingClientRect();
+      const itemRect = activeItem.getBoundingClientRect();
+      
+      const scrollOffset =
+        itemRect.left -
+        containerRect.left -
+        containerRect.width / 2 +
+        itemRect.width / 2;
+
+      container.scrollTo({
+        left: container.scrollLeft + scrollOffset,
+        behavior: 'smooth',
+      });
+    }
+  }, [activeCategory]);
+  
   const allCategories: CategoryFilterType[] = ['all', ...categories];
 
   return (
-    <nav className="mb-8">
-      <div className="flex overflow-x-auto space-x-2 pb-3 -mx-4 px-4" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+    <div className="relative">
+      <div
+        ref={scrollContainerRef}
+        className="flex space-x-2 overflow-x-auto scrollbar-hide"
+      >
         {allCategories.map((category) => {
           const isActive = activeCategory === category;
-          const Icon = category === 'all' ? AllIcon : categoryIconMap[category as MenuCategory];
+          const Icon = category === 'all' ? AllIcon : iconMap[category];
           
           return (
             <button
               key={category}
+              ref={isActive ? activeItemRef : null}
               onClick={() => setCategory(category)}
-              className={`flex-shrink-0 flex flex-col items-center justify-center w-24 h-20 rounded-xl p-2 transition-all duration-200 text-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary mt-1 ${
-                isActive ? 'bg-primary text-white shadow-lg' : 'bg-ui-bg text-text-secondary hover:bg-gray-200'
+              className={`flex-shrink-0 flex my-1 flex-col items-center justify-center w-20 ml-1 h-20 p-2 rounded-xl border transition-all duration-300 transform hover:scale-105 ${
+                isActive
+                  ? 'bg-primary text-white border-primary shadow-lg'
+                  : 'bg-ui-bg text-text-secondary border-ui-border hover:bg-gray-200'
               }`}
             >
-              <Icon className="w-6 h-6 mb-1" />
-              <span className="text-[10px] font-medium leading-tight whitespace-normal">{category}</span>
+              <Icon className="w-8 h-8 mb-1" />
+              <span className="text-xs text-center font-semibold break-words">
+                {category === 'all' ? 'All' : category}
+              </span>
             </button>
           );
         })}
       </div>
-    </nav>
+    </div>
   );
 };

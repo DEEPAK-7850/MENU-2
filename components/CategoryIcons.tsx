@@ -104,9 +104,9 @@ export const StartersVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) 
 
 export const StartersNonVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="12" cy="13" r="5" fill="#E57373" stroke="currentColor" strokeWidth="1.5"/>
-    <path d="M12 8V2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-    <path d="M10 2H14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M17.5 11C17.5 14.3137 15.0625 18 12 18C8.9375 18 6.5 14.3137 6.5 11C6.5 7.68629 8.9375 5 12 5C15.0625 5 17.5 7.68629 17.5 11Z" fill="#D2B48C" stroke="currentColor" strokeWidth="1.5" />
+    <path d="M12 18V21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    <path d="M10 21H14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
   </svg>
 );
 
@@ -166,10 +166,11 @@ export const RaitaIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
 
 export const IndianBreadsIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M3 18.5V10.7071C3 10.074 3.26339 9.46591 3.73223 9L9 3.73223C9.53409 3.26339 10.2659 3 11 3H13C13.7341 3 14.4659 3.26339 15 3.73223L20.2678 9C20.7366 9.46591 21 10.074 21 10.7071V18.5C21 19.8807 19.8807 21 18.5 21H5.5C4.11929 21 3 19.8807 3 18.5Z" stroke="currentColor" strokeWidth="1.5"/>
-    <path d="M9 13C9 13 10 12 12 12C14 12 15 13 15 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-    <circle cx="9" cy="9" r="0.5" fill="currentColor"/>
-    <circle cx="15" cy="9" r="0.5" fill="currentColor"/>
+    <path d="M5.18346 10.3146C4.48135 12.4419 5.5144 14.8085 7.42857 16.1429C10.2857 18.1429 14.2857 17.2857 16.2857 14.5714C18.2857 11.8571 17.5714 8 14.7143 6C11.8571 4 8.28571 4.71429 6.42857 7.28571" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M12.5 20.5C10.5 19.5 9 17.5 9 15.5C9 12.5 11 11 13.5 11C16 11 17.5 13.5 18 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+    <circle cx="7" cy="8" r="1" fill="#D2B48C"/>
+    <circle cx="15" cy="11" r="1" fill="#D2B48C"/>
+    <circle cx="11" cy="5" r="1" fill="#D2B48C"/>
   </svg>
 );
 
@@ -177,8 +178,9 @@ export const RiceVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M4 11C4 7.68629 6.68629 5 10 5H14C17.3137 5 20 7.68629 20 11V12H4V11Z" fill="#F5F5F5" stroke="currentColor" strokeWidth="1.5"/>
     <path d="M4 12H20V17C20 18.1046 19.1046 19 18 19H6C4.89543 19 4 18.1046 4 17V12Z" stroke="currentColor" strokeWidth="1.5"/>
-    <circle cx="10" cy="15" r="1" fill="#4CAF50"/>
-    <circle cx="14" cy="15" r="1" fill="#FF9800"/>
+    <circle cx="9" cy="15" r="1" fill="#4CAF50"/>
+    <circle cx="12" cy="15" r="1" fill="#FF9800"/>
+    <circle cx="15" cy="15" r="1" fill="#4CAF50"/>
   </svg>
 );
 
@@ -186,7 +188,7 @@ export const RiceNonVegIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) =
   <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M4 11C4 7.68629 6.68629 5 10 5H14C17.3137 5 20 7.68629 20 11V12H4V11Z" fill="#F5F5F5" stroke="currentColor" strokeWidth="1.5"/>
     <path d="M4 12H20V17C20 18.1046 19.1046 19 18 19H6C4.89543 19 4 18.1046 4 17V12Z" stroke="currentColor" strokeWidth="1.5"/>
-    <path d="M14 14C14 14 13 16 11 16C9 16 8 14 8 14" stroke="#A1887F" strokeWidth="1.5" strokeLinecap="round"/>
+    <path d="M12.5 13C12.5 13 14 15 15.5 14.5C17 14 16 16 16 16" stroke="#A1887F" strokeWidth="1.5" strokeLinecap="round"/>
     <path d="M16 16C16 14.8954 15.1046 14 14 14H10C8.89543 14 8 14.8954 8 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
   </svg>
 );
