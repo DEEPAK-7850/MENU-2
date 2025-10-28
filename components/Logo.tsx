@@ -5,7 +5,7 @@ import logo2 from '../assets/logo2.png';
 
 export const Logo: React.FC = () => {
 
-  const settledClasses = "h-40 rounded-lg w-auto"; // Example: sets height to 2.5rem
+  const settledClasses = "h-30 rounded-lg w-auto"; // Example: sets height to 2.5rem
 
   return (
     <>
