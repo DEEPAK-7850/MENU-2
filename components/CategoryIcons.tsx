@@ -433,27 +433,21 @@ export const RiceIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
 
 export const DessertsIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    {/* The Glass */}
-    <path d="M5 14C5 18.4183 8.13401 22 12 22C15.866 22 19 18.4183 19 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-    <path d="M5 14H19" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-    
-    {/* Ice Cream Scoop */}
-    <path d="M19 14C19 10.134 15.866 7 12 7C8.13401 7 5 10.134 5 14" stroke="currentColor" strokeWidth="1.5" fill="#F8BBD0" />
-    
-    {/* Another smaller scoop */}
-    <path d="M15 11C15 9.34315 13.6569 8 12 8C10.3431 8 9 9.34315 9 11" stroke="currentColor" strokeWidth="1.5" fill="#FFF9C4" />
-
-    {/* Sauce Drizzle */}
-    <path d="M12 8C11 9 13 10 12 11.5" stroke="#8D6E63" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-
-    {/* Cherry on top */}
-    <path d="M12 7L13.5 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-    <circle cx="13.5" cy="4" r="2" fill="#E53935" stroke="currentColor" strokeWidth="1.5"/>
-
-    {/* Sparkle Animation */}
-    <path d="M16 3 L 16.5 2 L 17 3 L 16.5 4 Z" fill="currentColor">
-         <animate attributeName="opacity" values="0; 1; 0" dur="2.5s" repeatCount="indefinite" begin="0.3s" />
-         <animateTransform attributeName="transform" type="scale" from="1" to="1.5" dur="2.5s" begin="0.3s" values="1; 1.5; 1" repeatCount="indefinite" additive="sum" />
-    </path>
+    <g id="ice-cream-body">
+      {/* Cone */}
+      <path d="M12 22L16 12H8L12 22Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="#FBC02D"/>
+      {/* Cone texture */}
+      <path d="M9.5 15.5L12 18L14.5 15.5" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M10 13.5L14 13.5" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
+      {/* Ice cream scoop */}
+      <path d="M16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12H16Z" stroke="currentColor" strokeWidth="1.5" fill="#F06292"/>
+    </g>
+    <g id="cherry-on-top">
+      {/* Cherry on top */}
+      <path d="M12 8C12.5 6 14 5 15 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <circle cx="15.5" cy="4.5" r="1.5" fill="#E53935" stroke="currentColor" strokeWidth="1.5"/>
+    </g>
   </svg>
 );
+ 
+ 

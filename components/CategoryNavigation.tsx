@@ -85,7 +85,10 @@ export const CategoryNavigation: React.FC<CategoryNavigationProps> = ({ activeCa
                   : 'bg-ui-bg text-text-secondary border-ui-border hover:bg-gray-200'
               }`}
             >
-              <Icon className="w-8 h-8 mb-1" isActive={isActive} />
+              <Icon 
+                className={`w-8 h-8 mb-1${category === MenuCategory.DESSERTS ? ' animate-dessert' : ''}`}
+                isActive={isActive}
+              />
               <span className="text-xs text-center font-semibold break-words">
                 {category}
               </span>
