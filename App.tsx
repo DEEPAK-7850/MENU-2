@@ -9,6 +9,7 @@ import { MENU_DATA, CATEGORY_ORDER } from './constants';
 import { MenuItem, FilterType, CategoryFilterType, MenuCategory, ItemType } from './types';
 import { Logo } from './components/Logo';
 import { Footer } from './components/Footer';
+import Timings from './components/Timings';
 
 const App: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -221,6 +222,7 @@ const App: React.FC = () => {
               onSectionRef={registerSectionRef}
             />
           </main>
+          <Timings/>
           <Footer/>
         </div>
         <ScrollToTopButton />
