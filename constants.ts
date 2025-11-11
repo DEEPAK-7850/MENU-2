@@ -5,7 +5,6 @@ export const CATEGORY_ORDER: MenuCategory[] = [
   MenuCategory.SOUP,
   MenuCategory.SALAD_PAPAD,
   MenuCategory.INDIAN_STARTERS,
-  MenuCategory.STARTERS,
   MenuCategory.EGGS,
   MenuCategory.INDIAN_MAIN_COURSE,
   MenuCategory.CHEF_SPECIAL,
@@ -149,16 +148,6 @@ export const MENU_DATA: MenuItem[] = [
   { id: 133, name: 'Chicken Hong Kong Style', description: 'Chicken prepared in Hong Kong style.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenhongkong/400/300', category: MenuCategory.INDIAN_STARTERS, },
   { id: 134, name: 'Chicken Dana', description: 'A special chicken preparation.', price: 349, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickendana/400/300', category: MenuCategory.INDIAN_STARTERS, },
 
-  // Starters
-  { id: 135, name: 'Veg Cigar Roll', description: 'Crispy, cigar-shaped vegetable rolls.', price: 275, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegcigarroll/400/300', category: MenuCategory.STARTERS, },
-  { id: 136, name: 'Dragon Paneer Chilly', description: 'A fiery version of Paneer Chilly.', price: 349, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/dragonpaneer/400/300', category: MenuCategory.STARTERS, },
-  { id: 137, name: 'Soya Chilly', description: 'A spicy dish made with soya chunks.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/soyachilly/400/300', category: MenuCategory.STARTERS, },
-  { id: 138, name: 'Oriental Gold Coin', description: 'A classic Indo-Chinese appetizer.', price: 375, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/orientalgoldcoin/400/300', category: MenuCategory.STARTERS, },
-  { id: 139, name: 'Chicken Malai Tikka', description: 'Creamy and succulent grilled chicken.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenmalaitikka/400/300', category: MenuCategory.STARTERS, },
-  { id: 140, name: 'Fish Bhujma', description: 'A flavorful fish preparation.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/fishbhujma/400/300', category: MenuCategory.STARTERS, },
-  { id: 141, name: 'Fish Amritsari', description: 'A popular fried fish dish from Amritsar.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/fishamritsari/400/300', category: MenuCategory.STARTERS, },
-  { id: 142, name: 'American Chop Suey (Chicken)', description: 'A classic American-Chinese dish with chicken.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/americanchopsuey/400/300', category: MenuCategory.STARTERS, },
-
   // Indian Main Course
   { id: 143, name: 'Paneer Butter Masala', description: 'Indian cottage cheese in a luscious tomato and butter gravy.', price: 399, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/paneerbuttermasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE, },
   { id: 144, name: 'Paneer Tikka Masala', description: 'Grilled paneer in a spiced gravy.', price: 429, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/paneertikkamasala/400/300', category: MenuCategory.INDIAN_MAIN_COURSE, },
@@ -192,7 +181,7 @@ export const MENU_DATA: MenuItem[] = [
   { id: 172, name: 'Matar Mushroom', description: 'A curry with peas and mushrooms.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/matarmushroom/400/300', category: MenuCategory.INDIAN_MAIN_COURSE, },
   { id: 173, name: 'Butter Chicken (Full)', description: 'A full portion of classic butter chicken.', price: 649, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/butterchickenfull/400/300', category: MenuCategory.INDIAN_MAIN_COURSE, },
   { id: 174, name: 'Butter Chicken (Half)', description: 'A half portion of classic butter chicken.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/butterchickenhalf/400/300', category: MenuCategory.INDIAN_MAIN_COURSE, },
-  { id: 175, name: 'Murg Mewari', description: 'A traditional Rajasthani chicken curry.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/murgmewari/400/300', category: MenuCategory.INDIAN_MAIN_COURSE, },
+  { id: 175, name: 'Murg Nawabi', description: 'A traditional Rajasthani chicken curry.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/murgmewari/400/300', category: MenuCategory.INDIAN_MAIN_COURSE, },
   { id: 176, name: 'Chicken Kadai', description: 'Chicken cooked with bell peppers and onions in a wok.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenkadai/400/300', category: MenuCategory.INDIAN_MAIN_COURSE, },
   { id: 177, name: 'Safed Chicken', description: 'A white, creamy chicken curry.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/safedchicken/400/300', category: MenuCategory.INDIAN_MAIN_COURSE, },
   { id: 178, name: 'Chicken Masala (Full)', description: 'A full portion of flavorful chicken masala.', price: 649, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenmasalafull/400/300', category: MenuCategory.INDIAN_MAIN_COURSE, },
@@ -213,6 +202,17 @@ export const MENU_DATA: MenuItem[] = [
   { id: 192, name: 'Handi Murg Navratan', description: 'A rich and creamy chicken curry with nine jewels, cooked in a handi.', price: 499, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/handimurg/400/300', category: MenuCategory.CHEF_SPECIAL, },
   { id: 193, name: 'Dhuva Ghost', description: 'Smoky and tender mutton curry.', price: 499, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/dhuvaghost/400/300', category: MenuCategory.CHEF_SPECIAL, },
   { id: 194, name: 'Mutton Rogan Josh', description: 'A signature Kashmiri mutton curry.', price: 499, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/roganjosh/400/300', category: MenuCategory.CHEF_SPECIAL, },
+  // Items moved from Starters
+  { id: 135, name: 'Veg Cigar Roll', description: 'Crispy, cigar-shaped vegetable rolls.', price: 275, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vegcigarroll/400/300', category: MenuCategory.CHEF_SPECIAL, },
+  { id: 136, name: 'Dragon Paneer Chilly', description: 'A fiery version of Paneer Chilly.', price: 349, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/dragonpaneer/400/300', category: MenuCategory.CHEF_SPECIAL, },
+  { id: 137, name: 'Soya Chilly', description: 'A spicy dish made with soya chunks.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/soyachilly/400/300', category: MenuCategory.CHEF_SPECIAL, },
+  { id: 138, name: 'Oriental Gold Coin', description: 'A classic Indo-Chinese appetizer.', price: 375, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/orientalgoldcoin/400/300', category: MenuCategory.CHEF_SPECIAL, },
+  { id: 139, name: 'Chicken Malai Tikka', description: 'Creamy and succulent grilled chicken.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/chickenmalaitikka/400/300', category: MenuCategory.CHEF_SPECIAL, },
+  { id: 140, name: 'Fish Bhujma', description: 'A flavorful fish preparation.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/fishbhujma/400/300', category: MenuCategory.CHEF_SPECIAL, },
+  { id: 141, name: 'Fish Amritsari', description: 'A popular fried fish dish from Amritsar.', price: 449, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/fishamritsari/400/300', category: MenuCategory.CHEF_SPECIAL, },
+  { id: 142, name: 'American Chop Suey (Chicken)', description: 'A classic American-Chinese dish with chicken.', price: 399, type: ItemType.NON_VEG, imageUrl: 'https://picsum.photos/seed/americanchopsuey/400/300', category: MenuCategory.CHEF_SPECIAL, },
+  // New Item
+  { id: 243, name: 'Achaari Paratha', description: 'A flavorful paratha with pickling spices.', price: 79, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/achaariparatha/400/300', category: MenuCategory.CHEF_SPECIAL, },
 
   // Rajasthani Main Course
   { id: 195, name: 'Besan Gatta Curry', description: 'Gram flour dumplings in a tangy yogurt-based curry.', price: 299, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/gattacurry/400/300', category: MenuCategory.RAJASTHANI_MAIN_COURSE, },
@@ -264,7 +264,7 @@ export const MENU_DATA: MenuItem[] = [
 
   // Desserts
   { id: 235, name: 'Vanilla Ice Cream (2 Scoops)', description: 'Two scoops of classic vanilla ice cream.', price: 99, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/vanillaicecream/400/300', category: MenuCategory.DESSERTS, },
-  { id: 236, name: 'Strawberry Ice Cream (2 Scoops)', description: 'Two scoops of refreshing strawberry ice cream.', price: 99, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/strawberryicecream/400/300', category: MenuCategory.DESSERTS, },
+  { id: 236, name: 'Strawberry Ice Cream (2 Scoops)', description: 'Two scoops of refreshing strawberry ice cream.', price: 99, type: ItemType.VEG, imageUrl: 'httpsD://picsum.photos/seed/strawberryicecream/400/300', category: MenuCategory.DESSERTS, },
   { id: 237, name: 'American Nuts Ice Cream (2 Scoops)', description: 'Two scoops of creamy ice cream with mixed nuts.', price: 149, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/americannuts/400/300', category: MenuCategory.DESSERTS, },
   { id: 238, name: 'Butterscotch Ice Cream (2 Scoops)', description: 'Two scoops of rich butterscotch ice cream.', price: 149, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/butterscotch/400/300', category: MenuCategory.DESSERTS, },
   { id: 239, name: 'Gulab Jamun (4pc.)', description: 'Soft, melt-in-your-mouth milk solids dumplings soaked in a rose-flavored sugar syrup.', price: 129, type: ItemType.VEG, imageUrl: 'https://picsum.photos/seed/gulabjamun/400/300', category: MenuCategory.DESSERTS, },

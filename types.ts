@@ -12,7 +12,6 @@ export enum MenuCategory {
   SALAD_PAPAD = 'Salad / Papad',
   SOUP = 'Soup',
   INDIAN_STARTERS = 'Indian Starters',
-  STARTERS = 'Starters',
   INDIAN_MAIN_COURSE = 'Indian Main Course',
   CHEF_SPECIAL = 'Chef’s Special',
   RAJASTHANI_MAIN_COURSE = 'Rajasthani Main Course',
